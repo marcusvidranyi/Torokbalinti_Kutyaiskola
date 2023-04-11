@@ -21,8 +21,11 @@ function Home() {
             </div>
             <div className="main_category_class">
                 <img className="main_category_pictures" src={hobbi} />
+                <div className="category_image_text">HOBBI</div>
                 <img className="main_category_pictures" src={sport} />
+                <div className="category_image_text">SPORT</div>
                 <img className="main_category_pictures" src={szolgalati} />
+                <div className="category_image_text">SZOLGÁLATI</div>
 
             </div>
             <div className="home_page_links_container">
@@ -30,6 +33,9 @@ function Home() {
                 <Link to="/panzio">Panzió</Link>
                 <Link to="/hirek">Hírek</Link>
                 <Link to="/partnerek">Partnerek</Link>
+            </div>
+            <div className="facebook_feed">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=350&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="700" /* style="border:none;overflow:hidden" */ scrolling="no" frameBorder="0" /* allowFullscreen="true" */ allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
 
         </div>
