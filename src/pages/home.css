@@ -1,18 +1,36 @@
+.home_container {
+    width: 100vw;
+}
+
 .main_category_class {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+    overflow: hidden;
+
 }
-.home_container > a {
+
+.home_container a {
     color: black;
     text-decoration: none;
 }
+
 .main_category_pictures {
     margin: 5vh 0 5vh 0;
     height: 25vh;
-   /*  width: auto !important;
+    /*  width: auto !important;
     height: auto !important;
     max-width: 100%; */
+}
+
+.home_page_links_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_page_links_container > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 40px 5px 0px 5px;
 }

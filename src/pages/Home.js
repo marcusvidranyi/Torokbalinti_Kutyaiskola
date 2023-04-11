@@ -12,23 +12,26 @@ function Home() {
     return (
         <div className="home_container">
             <NavBar />
-            <Link to="/">Home</Link>
-            <Link to="/kikepzok">Kiképzők</Link>
-            <Link to="/galeria">Gagléria</Link>
-            <Link to="/elerhetoseg">Elérhetőség</Link>
-            <Link to="/aszf">Ászf</Link>
+            <div className="home_page_links_container">
+                <Link to="/">Home</Link>
+                <Link to="/kikepzok">Kiképzők</Link>
+                <Link to="/galeria">Gagléria</Link>
+                <Link to="/elerhetoseg">Elérhetőség</Link>
+                <Link to="/aszf">Ászf</Link>
+            </div>
             <div className="main_category_class">
                 <img className="main_category_pictures" src={hobbi} />
                 <img className="main_category_pictures" src={sport} />
                 <img className="main_category_pictures" src={szolgalati} />
 
             </div>
+            <div className="home_page_links_container">
+                <Link to="/elerhetoseg">Rólunk</Link>
+                <Link to="/panzio">Panzió</Link>
+                <Link to="/hirek">Hírek</Link>
+                <Link to="/partnerek">Partnerek</Link>
+            </div>
 
-            <Link to="/elerhetoseg">Rólunk</Link>
-            <Link to="/panzio">Panzió</Link>
-            <Link to="/hirek">Hírek</Link>
-            <Link to="/partnerek">Partnerek</Link>
-            
         </div>
     )
 }
