@@ -17,26 +17,23 @@
 }
 
 /*-----------MAIN 3 CATEGORY SELECTOR TEXT--------*/
-.category_image_text:nth-child(2) {
+.category_image_text_hobbi {
     position: absolute;
-    left: 10%;
-    bottom: 2%;
+    margin-bottom: 2vh;
     color: #EBEBEB;
     z-index: 1;
 
 }
-.category_image_text:nth-child(4) {
+.category_image_text_sport {
     position: absolute;
-    
-    bottom: 2%;
+    margin-bottom: 2vh;
     color: #EBEBEB;
     z-index: 1;
 
 }
-.category_image_text:nth-child(6) {
+.category_image_text_szolgalati {
     position: absolute;
-    right: 3%;
-    bottom: 2%;
+    margin-bottom: 2vh;
     color: #EBEBEB;
     z-index: 1;
 
@@ -53,6 +50,9 @@
     height: 25vh;
     background-color: black;
     opacity: 0.54;
+    display: flex;
+    justify-content: center;
+    align-items: end;
     
 }
 
@@ -75,6 +75,7 @@
 .facebook_feed {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -83,3 +84,51 @@ iframe {
     box-shadow: 2px 2px 4px #ccc;
 }
 
+
+@media only screen and (min-width: 895px) {
+
+    /*--------------------HERO PAGE-----------------*/
+    .hero_page_container {
+        height: 100vh;
+        box-sizing: border-box;
+        
+    }
+
+    .home_page_links_container {
+        display: none;
+        box-sizing: border-box;
+    }
+
+    .main_category_class {
+        /* max-width: auto; */
+        height: 90vh;
+    }
+
+    .main_category_pictures {
+        height: 100%;
+        /* object-fit: fill; */
+        /* height: 100%; */
+        /* width: 100%; */
+        background-color: black;
+        /* opacity: 0.54; */
+        
+    }
+
+    /*-------------------CONTACT AND FACEBOOK PAGE----------*/
+
+    .contact_and_facebook_box {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        height: 100vh;
+        padding-top: 5vh;
+    }
+
+    .contact_form_box_container {
+        background-color: #001D3D;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+}

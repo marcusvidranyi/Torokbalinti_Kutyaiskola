@@ -8,6 +8,9 @@ import Aszf from './pages/Aszf';
 import Panzio from './pages/Panzio';
 import Hirek from './pages/Hirek';
 import Partnerek from './pages/Partnerek';
+import Szolgalati from './pages/Szolgalati';
+import Sport from "./pages/Sport";
+import Hobbi from './pages/Hobbi';
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
         <Route path="/panzio" element={<Panzio />} />
         <Route path="/hirek" element={<Hirek />} />
         <Route path="/partnerek" element={<Partnerek />} />
+        <Route path="/hobbi" element={<Hobbi />} />
+        <Route path="/sport" element={<Sport />} />
+        <Route path="/szolgalati" element={<Szolgalati />} />
       </Routes>
     </>
   );

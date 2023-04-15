@@ -40,16 +40,15 @@ const NavBar = () => {
                         <div className={burgerClass}></div>
                     </div>
                 </div>
-                <div className={window.innerWidth > 479 ? "menu visible" : menuClass}>
+                <div className={window.innerWidth > 900 ? "menu visible" : menuClass}>
                     <div className="burger_links">
-                        <Link to="/">Home</Link>
-                        <Link to="/kikepzok">Kiképzők</Link>
-                        <Link to="/galeria">Gagléria</Link>
-                        <Link to="/elerhetoseg">Elérhetőség</Link>
-                        <Link to="/panzio">Panzió</Link>
-                        <Link to="/hirek">Hírek</Link>
-                        <Link to="/partnerek">Partnerek</Link>
-                        <Link to="/aszf">Ászf</Link>
+                        <Link to="/kikepzok">KIKÉPZŐK</Link>
+                        <Link to="/galeria">GALÉRIA</Link>
+                        <Link to="/elerhetoseg">ELÉRHETŐSÉG</Link>
+                        <Link to="/panzio">PANZIÓ</Link>
+                        <Link to="/hirek">HíREK</Link>
+                        <Link to="/partnerek">PARTNEREK</Link>
+                        <Link to="/aszf">ÁSZF</Link>
                     </div>
                 </div>
 
