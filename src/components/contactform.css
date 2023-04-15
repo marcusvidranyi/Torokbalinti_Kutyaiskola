@@ -1,0 +1,60 @@
+.contact_form {
+    position: relative;
+    width: 100%;
+}
+
+.contact_form .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+    
+}
+
+.contact_form .row100 .inputBox {
+    width: 100%;
+}
+
+
+.inputBox span {
+    margin: 10px 0 5px 0;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    /* border: 1px solid #836A39; */
+}
+
+.inputBox textarea {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    outline: none;
+    /* border: 1px solid #836A39; */
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.contact_form_submitbutton {
+    background-color: #001D3D;
+    color: #FFFF;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    
+}
+
+.contact_form_submitbutton:hover {
+    /* border: 1px solid #FFFF;
+    box-shadow: 0 0 5px 5px #A8894A !important;
+    transition: all 0.2s linear; */
+}
