@@ -74,11 +74,17 @@
 
 /*----------------Facebook------------------------*/
 
+.contact_and_facebook_box {
+    height: 100vh;
+}
+
 .facebook_feed {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 2vh;
+    /* height: 100%; */
 }
 
 iframe {
@@ -88,36 +94,26 @@ iframe {
 
 .ribbon_box {
     height: 100px;
-    background-color: #F5CC00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.ribbon {
     background-color: #001D3D;
-    transform: rotateY(0deg) rotate(45deg);
-    width: 70.71067811865476px;
-    height: 70.71067811865476px;
-    background-size: 4rem 4rem;
-    position: relative;
+    background-image: linear-gradient(
+            -45deg,
+            transparent 60%,
+            #CCA000 50%),
+            linear-gradient(
+            -45deg,
+            transparent 75%,
+            #CCA000 50%)
+    /* background-size: 4rem 2rem; */
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 
 }
 
-.ribbon_yellow {
-    background-color: crimson;
-    transform: rotateY(0deg) rotate(45deg);
-    width: 70.71067811865476px;
-    height: 70.71067811865476px;
-    background-size: 4rem 4rem;
-    z-index: 1;
-    position: absolute;
-    left: 47.7%;
 
 
 
-}
 
 
 @media only screen and (min-width: 895px) {
@@ -152,12 +148,21 @@ iframe {
     /*-------------------CONTACT AND FACEBOOK PAGE----------*/
 
     .contact_and_facebook_box {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; */
+        gap: 5vw;
+        /* height: 100vh; */
+        padding-top: 5vh;
+        flex-wrap: wrap;
+    }
+
+    .contact_page_section {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        gap: 5vw;
-        height: 100vh;
-        padding-top: 5vh;
+        width: 100%;
+        
     }
 
     .contact_form_box_container {
@@ -165,6 +170,12 @@ iframe {
         border-radius: 15px;
         padding: 20px;
 
+    }
+
+    .contact_page_picture_box {
+        width: 400px;
+        height: 400px;
+        background-color: crimson;
     }
 
 }
