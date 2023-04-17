@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.contact_form_box {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
 .contact_form_box h2 {
     color: #CCA000;
     margin: 3vh 0 0 0;
@@ -18,7 +23,7 @@
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
-    
+
 }
 
 .inputBox textarea {
@@ -26,8 +31,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    
-    
+
+
 }
 
 .contact_form .row100 .inputBox {
@@ -61,12 +66,12 @@
 
 .contact_form_submitbutton {
     background-color: #F5CC00;
-    color:  #FFFF;
+    color: #FFFF;
     border-radius: 5px;
     width: 150px;
     height: 40px;
     cursor: pointer;
-    
+
 }
 
 .contact_form_submitbutton:hover {
