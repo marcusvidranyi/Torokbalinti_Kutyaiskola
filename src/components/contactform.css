@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.contact_form_box h2 {
+    color: #CCA000;
+    margin: 3vh 0 0 0;
+}
+
 .contact_form .row50 {
     display: flex;
     gap: 20px;
@@ -16,6 +21,15 @@
     
 }
 
+.inputBox textarea {
+    background-image: url("../images/tbk_logo10.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    
+    
+}
+
 .contact_form .row100 .inputBox {
     width: 100%;
 }
@@ -24,6 +38,7 @@
 .inputBox span {
     margin: 10px 0 5px 0;
     font-weight: 500;
+    color: #CCA000;
 }
 
 .inputBox input {
@@ -45,16 +60,17 @@
 }
 
 .contact_form_submitbutton {
-    background-color: #001D3D;
-    color: #FFFF;
+    background-color: #F5CC00;
+    color:  #FFFF;
     border-radius: 5px;
     width: 150px;
+    height: 40px;
     cursor: pointer;
     
 }
 
 .contact_form_submitbutton:hover {
-    /* border: 1px solid #FFFF;
+    border: 1px solid #FFFF;
     box-shadow: 0 0 5px 5px #A8894A !important;
-    transition: all 0.2s linear; */
+    transition: all 0.2s linear;
 }
