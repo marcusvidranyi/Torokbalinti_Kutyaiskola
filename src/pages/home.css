@@ -82,19 +82,109 @@ iframe {
 .ribbon_box {
     height: 100px;
     background-color: #001D3D;
-    background-image: linear-gradient(
-            -45deg,
+    background-image: linear-gradient(-45deg,
             transparent 60%,
             #CCA000 50%),
-            linear-gradient(
-            -45deg,
+        linear-gradient(-45deg,
             transparent 75%,
             #CCA000 50%)
-    /* background-size: 4rem 2rem; */
-    
-    /* display: flex;
+        /* background-size: 4rem 2rem; */
+
+        /* display: flex;
     justify-content: center;
     align-items: center; */
+
+}
+
+
+/*--------------------Event Card---------------------------------*/
+
+.event_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 50px 0 50px;
+
+
+}
+
+.eventCard_box {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(5, auto);
+    /* grid-auto-rows: 500px; */
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 5em;
+
+
+}
+
+.eventCard {
+    height: 300px;
+    border: 1px solid #CCA000;
+    font-size: 16px;
+    padding-bottom: 1em;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+.eventCard p {
+    padding: 0 5px 0 5px;
+}
+
+.eventCard img {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+
+}
+
+/*Event Modal*/
+
+.eventModal {
+    position: fixed;
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: 600px;
+    left: 0;
+    background-color: crimson;
+}
+
+/*-----------------------------------Contact and email box------------------------------*/
+
+.contact_and_facebook_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+
+
+}
+
+/*  .contact_page_section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+} */
+
+.contact_form_box_container {
+    background-color: #003566;
+    border-radius: 15px;
+    padding: 20px;
 
 }
 
@@ -133,17 +223,85 @@ iframe {
 
     /*-------------------CONTACT AND FACEBOOK PAGE----------*/
 
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1254px) {
+
+    .eventCard_box {
+        grid-template-columns: repeat(6, auto);
+
+
+    }
+
+    .eventCard {
+        grid-column: span 2;
+    }
+
+    .eventCard:last-child:nth-child(3n - 1) {
+        grid-column-end: -2;
+    }
+
+    .eventCard:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 4;
+    }
+}
+
+@media only screen and (max-width: 895px) {
+
+    .eventModal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        background-color: crimson;
+    }
+
+
+    .eventCard_box {
+
+        grid-template-columns: repeat(2, auto);
+        font-size: 10px;
+
+    }
+
+
+    .eventCard {
+        height: auto;
+        border: 1px solid #CCA000;
+        font-size: 14px;
+        padding-bottom: 1em;
+        border-radius: 15px;
+        overflow: hidden;
+
+
+    }
+
+
+
+
+
     .contact_and_facebook_box {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 1vw;
-        
-        
+
+
     }
 
-   /*  .contact_page_section {
+    /*  .contact_page_section {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -152,8 +310,12 @@ iframe {
 
     .contact_form_box_container {
         background-color: #003566;
-        border-radius: 15px;
+        border-radius: 0;
         padding: 20px;
+        width: 100%;
+        margin: 0;
+
     }
+
 
 }

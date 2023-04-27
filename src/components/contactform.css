@@ -16,6 +16,7 @@
 .contact_form .row50 {
     display: flex;
     gap: 20px;
+    overflow: hidden;
 }
 
 .inputBox {
