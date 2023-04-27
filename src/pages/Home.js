@@ -68,7 +68,7 @@ function Home() {
             <section className="contact_and_facebook_box">
 
 
-                <div /* style={{ marginRight: "160px" }} */ dangerouslySetInnerHTML={{
+                <div dangerouslySetInnerHTML={{
                     __html: `<iframe width=${window.innerWidth / 4} height="845" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=T%C3%B6r%C3%B6kb%C3%A1lint%20T%C3%B3%20utca%20+(T%C3%B6r%C3%B6kb%C3%A1linti%20Kutyaiskola)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>`
                 }} />
 

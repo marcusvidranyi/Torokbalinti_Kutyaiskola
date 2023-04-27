@@ -114,17 +114,147 @@ iframe {
     width: 100%;
     display: grid;
     gap: 1rem;
-    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+
     grid-template-columns: repeat(5, auto);
-    /* grid-auto-rows: 500px; */
+
     justify-content: center;
     gap: 1em;
     margin-bottom: 5em;
 
-
 }
 
-.eventCard {
+
+.eventCard_container {
+    position: relative;
+    margin: 24px;
+    width: 20em;
+    height: 570px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.eventCard_img_container,
+.eventCard_body_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.eventCard_img_container img {
+    width: 100%;
+}
+
+.eventCard_body_container {
+    position: relative;
+}
+
+.eventCard_overlay {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(204, 160, 0, 0.8);
+    opacity: 0;
+    transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.eventCard_container:hover .eventCard_overlay {
+    opacity: 1;
+    height: 150px;
+}
+
+.event_info {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.event_title,
+.price {
+    color: #18537a;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 12px;
+}
+
+.info {
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.separator {
+    width: 30%;
+    height: 6px;
+    background-color: #17537a;
+    margin-bottom: 16px;
+    border-radius: 25px;
+}
+
+.additional-info {
+    border-top: 1px solid #bbb;
+    margin-top: 80px;
+    padding: 0px;
+    padding-bottom: 0;
+}
+
+.additional-info .info {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info i {
+    color: #18537a;
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+
+.info span {
+    color: #18537a;
+    font-weight: bolder;
+}
+
+.action {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: transparent;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top 0.4s;
+}
+
+.eventCard_container:hover .action {
+    top: 50px;
+}
+
+.action:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+/* .eventCard {
     height: 300px;
     border: 1px solid #CCA000;
     font-size: 16px;
@@ -145,7 +275,9 @@ iframe {
     object-fit: cover;
     padding: 0;
 
-}
+} */
+
+
 
 /*Event Modal*/
 
@@ -239,15 +371,15 @@ iframe {
 
     }
 
-    .eventCard {
+    .eventCard_container {
         grid-column: span 2;
     }
 
-    .eventCard:last-child:nth-child(3n - 1) {
+    .eventCard_container:last-child:nth-child(3n - 1) {
         grid-column-end: -2;
     }
 
-    .eventCard:nth-last-child(2):nth-child(3n + 1) {
+    .eventCard_container:nth-last-child(2):nth-child(3n + 1) {
         grid-column-end: 4;
     }
 }
@@ -270,20 +402,11 @@ iframe {
 
     .eventCard_box {
 
-        grid-template-columns: repeat(2, auto);
-        font-size: 10px;
-
-    }
-
-
-    .eventCard {
-        height: auto;
-        border: 1px solid #CCA000;
-        font-size: 14px;
-        padding-bottom: 1em;
-        border-radius: 15px;
-        overflow: hidden;
-
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* font-size: 10px; */
 
     }
 
