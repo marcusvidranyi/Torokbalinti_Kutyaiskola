@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import "./home.css";
+
 import NavBar from "../components/NavBar";
+import EventCard from "../components/EventCard";
+
+
 import hobbi from "../images/hobbi.jpg";
 import sport from "../images/sport.jpg";
 import szolgalati from "../images/szolgalati.jpg";
 import ContactForm from "../components/ContactForm";
 import InfoBox from "../components/InfoBox";
+import eventData from "../data/eventData";
 
 
 
@@ -13,10 +18,10 @@ import InfoBox from "../components/InfoBox";
 
 function Home() {
 
-    let squareLength = (100 * Math.sqrt(2))
-    console.log(squareLength)
+    /* let squareLength = (100 * Math.sqrt(2));
+    console.log(squareLength);
 
-    console.log(window.innerWidth)
+    console.log(window.innerWidth); */
 
 
     return (
@@ -52,6 +57,14 @@ function Home() {
                     <Link to="/partnerek">Partnerek</Link>
                 </div>
             </section>
+            <section className="event_section">
+                <h2>Programok</h2>
+                <div className="eventCard_box">
+                    {eventData.map((event, index) => {
+                        return <EventCard {...event} key={index} itemIndex={index}/>
+                    })}
+                </div>
+            </section>
             <section className="contact_and_facebook_box">
 
 
@@ -64,7 +77,7 @@ function Home() {
                     <InfoBox />
                     <ContactForm />
                 </div>
-                
+
                 <div dangerouslySetInnerHTML={{
                     __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=600px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500px" height=850px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
                 }} />

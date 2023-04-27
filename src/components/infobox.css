@@ -102,3 +102,10 @@
 .social_media_links li a:hover {
     color: #ffff;
 }
+
+@media screen and (max-width: 400px) {
+    .infobox {
+        font-size: 14px;
+    }
+    
+}
