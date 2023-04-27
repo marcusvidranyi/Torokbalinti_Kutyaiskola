@@ -16,6 +16,8 @@ function Home() {
     let squareLength = (100 * Math.sqrt(2))
     console.log(squareLength)
 
+    console.log(window.innerWidth)
+
 
     return (
         <div className="home_container">
@@ -52,28 +54,26 @@ function Home() {
             </section>
             <section className="contact_and_facebook_box">
 
-                <div className="facebook_feed">
-                    <div style={{ marginRight: "50px" }} dangerouslySetInnerHTML={{
-                        __html: `<iframe width="117%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=T%C3%B6r%C3%B6kb%C3%A1lint%20T%C3%B3%20utca%20+(T%C3%B6r%C3%B6kb%C3%A1linti%20Kutyaiskola)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>`
-                    }} />
-                    <div dangerouslySetInnerHTML={{
-                        __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=600px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500px" height=850px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
-                    }} />
 
-                </div>
+                <div /* style={{ marginRight: "160px" }} */ dangerouslySetInnerHTML={{
+                    __html: `<iframe width=${window.innerWidth / 4} height="845" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=T%C3%B6r%C3%B6kb%C3%A1lint%20T%C3%B3%20utca%20+(T%C3%B6r%C3%B6kb%C3%A1linti%20Kutyaiskola)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>`
+                }} />
 
 
-            </section>
-
-            <section className="contact_page_section">
                 <div className="contact_form_box_container">
                     <InfoBox />
                     <ContactForm />
                 </div>
-                <div className="contact_page_picture_box">
+                
+                <div dangerouslySetInnerHTML={{
+                    __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=600px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500px" height=850px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
+                }} />
 
-                </div>
             </section>
+
+            {/* <section className="contact_page_section">
+
+            </section> */}
             <div className="ribbon_box">
 
 

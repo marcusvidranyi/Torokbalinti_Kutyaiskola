@@ -74,19 +74,6 @@
 
 /*----------------Facebook------------------------*/
 
-.contact_and_facebook_box {
-    height: 100vh;
-}
-
-.facebook_feed {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 2vh;
-    /* height: 100%; */
-}
-
 iframe {
     border-radius: 10px;
     box-shadow: 2px 2px 4px #ccc;
@@ -110,7 +97,6 @@ iframe {
     align-items: center; */
 
 }
-
 
 
 
@@ -148,34 +134,26 @@ iframe {
     /*-------------------CONTACT AND FACEBOOK PAGE----------*/
 
     .contact_and_facebook_box {
-        /* display: flex;
-        flex-direction: row;
+        display: flex;
         justify-content: center;
-        align-items: flex-start; */
-        gap: 5vw;
-        /* height: 100vh; */
-        padding-top: 5vh;
+        align-items: center;
         flex-wrap: wrap;
+        gap: 1vw;
+        
+        
     }
 
-    .contact_page_section {
+   /*  .contact_page_section {
         display: flex;
         justify-content: center;
         width: 100%;
         
-    }
+    } */
 
     .contact_form_box_container {
         background-color: #003566;
         border-radius: 15px;
         padding: 20px;
-
-    }
-
-    .contact_page_picture_box {
-        width: 400px;
-        height: 400px;
-        background-color: crimson;
     }
 
 }
