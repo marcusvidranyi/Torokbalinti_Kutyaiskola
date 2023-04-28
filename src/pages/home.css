@@ -74,10 +74,6 @@
 
 /*----------------Facebook------------------------*/
 
-iframe {
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px #ccc;
-}
 
 .ribbon_box {
     height: 100px;
@@ -105,13 +101,15 @@ iframe {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 50px 0 50px;
+    margin: 300px 0 150px 0;
+    /*  height: 500px;
+     */
+
 
 
 }
 
 .eventCard_box {
-    width: 100%;
     display: grid;
     gap: 1rem;
 
@@ -120,18 +118,18 @@ iframe {
     justify-content: center;
     gap: 1em;
     margin-bottom: 5em;
+    z-index: 1;
 
 }
 
-
 .eventCard_container {
     position: relative;
-    margin: 24px;
+    margin: 24px 10px 24px 10px;
     width: 20em;
     height: 570px;
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 30px 5px rgba(0, 29, 61, 0.5);
     cursor: pointer;
 }
 
@@ -145,7 +143,7 @@ iframe {
 }
 
 .eventCard_img_container img {
-    width: 100%;
+    height: 70%;
 }
 
 .eventCard_body_container {
@@ -167,7 +165,7 @@ iframe {
 }
 
 .event_info {
-    background-color: #fff;
+    background-color: #EBEBEB;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,7 +175,7 @@ iframe {
 
 .event_title,
 .price {
-    color: #18537a;
+    color: #001D3D;
     font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 1px;
@@ -262,7 +260,7 @@ iframe {
     border-radius: 15px;
     overflow: hidden;
 
-
+    
 }
 
 .eventCard p {
@@ -274,8 +272,76 @@ iframe {
     width: 100%;
     object-fit: cover;
     padding: 0;
-
+    
 } */
+
+/*----------------------------Background Decoration------------------------------*/
+
+.event_section {
+    position: relative;
+
+}
+
+.event_section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #EBEBEB;
+    clip-path: polygon(100% 0, 0 100%, 100% 110%);
+}
+
+.contact_and_facebook_box {
+    position: relative;
+
+}
+
+.contact_and_facebook_box::before {
+    content: "";
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(45deg, #EBEBEB, #001D3D);
+
+    clip-path: polygon(100% 0, -140% 100%, 100% 100%);
+    
+
+
+
+
+
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.oxford_blue {
+    background: linear-gradient(45deg, #001D3D, #EBEBEB);
+
+}
+
+.yale_blue {
+    background-color: #003566;
+
+}
+
+.satin_sheen_gold {
+    background-color: #CCA000;
+
+}
+
+.jonquiil {
+    background-color: #F5CC00;
+
+}
+
+.aniti_flash_white {
+    background: linear-gradient(45deg, #EBEBEB, #001D3D);
+
+}
 
 
 
@@ -301,7 +367,8 @@ iframe {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1vw;
+    gap: 25px;
+    margin: 100px 0 100px 0;
 
 
 }
@@ -315,8 +382,23 @@ iframe {
 
 .contact_form_box_container {
     background-color: #003566;
-    border-radius: 15px;
     padding: 20px;
+    z-index: 1;
+
+}
+
+.google_maps,
+.contact_form_box_container,
+.facebook_feed {
+    box-shadow: 0 0 30px 5px rgba(0, 29, 61, 0.5);
+}
+
+
+@media only screen and (min-width: 1795px) {
+
+    .event_section {
+        height: 500px;
+    }
 
 }
 
@@ -363,6 +445,29 @@ iframe {
 
 }
 
+
+@media only screen and (max-width: 1795px) {
+
+    .eventCard_box {
+        grid-template-columns: repeat(6, auto);
+
+
+    }
+
+    .eventCard_container {
+        grid-column: span 2;
+    }
+
+    .eventCard_container:last-child:nth-child(3n - 1) {
+        grid-column-end: -2;
+    }
+
+    .eventCard_container:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 4;
+    }
+}
+
+
 @media only screen and (max-width: 1254px) {
 
     .eventCard_box {
@@ -384,6 +489,16 @@ iframe {
     }
 }
 
+@media only screen and (max-width: 1076px) {
+    .eventCard_box {
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+
+
+    }
+}
+
+
 @media only screen and (max-width: 895px) {
 
     .eventModal {
@@ -399,14 +514,27 @@ iframe {
         background-color: crimson;
     }
 
+    .eventCard_container {
+        position: relative;
+        margin: 24px 10px 24px 10px;
+        width: 20em;
+        height: 500px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 0 30px 5px rgba(0, 53, 102, 0.5);
+        cursor: pointer;
+    }
+
+
 
     .eventCard_box {
-
-        display: flex;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        /*  display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
-        /* font-size: 10px; */
+        align-items: center; */
+        font-size: 12px;
 
     }
 
@@ -440,5 +568,18 @@ iframe {
 
     }
 
+
+}
+
+@media only screen and (max-width: 645px) {
+    .eventCard_box {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
 
 }
