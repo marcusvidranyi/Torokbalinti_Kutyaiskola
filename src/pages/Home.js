@@ -8,10 +8,13 @@ import EventCard from "../components/EventCard";
 import hobbi from "../images/hobbi.jpg";
 import sport from "../images/sport.jpg";
 import szolgalati from "../images/szolgalati.jpg";
+
+
 import ContactForm from "../components/ContactForm";
 import InfoBox from "../components/InfoBox";
 import eventData from "../data/eventData";
-
+import Dog from "../components/Dog";
+import Ball from "../components/Ball";
 
 
 
@@ -57,20 +60,24 @@ function Home() {
                     <Link to="/partnerek">Partnerek</Link>
                 </div>
             </section>
-            <section className="event_section">
+            <Ball />
+            <Dog />
+            <section className="event_section oxford_blue">
                 <h2>Programok</h2>
                 <div className="eventCard_box">
                     {eventData.map((event, index) => {
                         return <EventCard {...event} key={index} itemIndex={index}/>
                     })}
                 </div>
+             
+              
             </section>
             <section className="contact_and_facebook_box">
 
 
-                <div dangerouslySetInnerHTML={{
-                    __html: `<iframe width=${window.innerWidth / 4} height="845" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=T%C3%B6r%C3%B6kb%C3%A1lint%20T%C3%B3%20utca%20+(T%C3%B6r%C3%B6kb%C3%A1linti%20Kutyaiskola)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>`
-                }} />
+                <div className="google_maps" dangerouslySetInnerHTML={{
+                    __html: `<iframe width=${window.innerWidth / 4} height="864.2" width="450px"frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=T%C3%B6r%C3%B6kb%C3%A1lint%20T%C3%B3%20utca%20+(T%C3%B6r%C3%B6kb%C3%A1linti%20Kutyaiskola)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>`
+                }} style={{zIndex:"1"}}/>
 
 
                 <div className="contact_form_box_container">
@@ -78,9 +85,9 @@ function Home() {
                     <ContactForm />
                 </div>
 
-                <div dangerouslySetInnerHTML={{
-                    __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=600px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500px" height=850px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
-                }} />
+                <div className="facebook_feed" dangerouslySetInnerHTML={{
+                    __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=600px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500px" height=864.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
+                }} style={{zIndex:"1"}}/>
 
             </section>
 
