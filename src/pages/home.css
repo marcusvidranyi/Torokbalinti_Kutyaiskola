@@ -305,7 +305,7 @@
     left: 0;
     width: 100%;
     height: 500px;
-    background: linear-gradient(45deg, #EBEBEB, #001D3D);
+    background: linear-gradient(90deg, #EBEBEB, #001D3D);
 
     clip-path: polygon(100% 0, -140% 100%, 100% 100%);
     
@@ -319,7 +319,7 @@
 /*-------------------------------------------------------------------------------------*/
 
 .oxford_blue {
-    background: linear-gradient(45deg, #001D3D, #EBEBEB);
+    background: linear-gradient(90deg, #001D3D, #EBEBEB);
 
 }
 
@@ -339,7 +339,7 @@
 }
 
 .aniti_flash_white {
-    background: linear-gradient(45deg, #EBEBEB, #001D3D);
+    background: linear-gradient(90deg, #EBEBEB, #001D3D);
 
 }
 
