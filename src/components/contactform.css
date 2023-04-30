@@ -63,10 +63,10 @@
 .contact_form_submitbutton {
     background-color: #F5CC00;
     color: #FFFF;
-    border-radius: 5px;
     width: 150px;
     height: 40px;
     cursor: pointer;
+    border: 1px solid grey;
 
 }
 

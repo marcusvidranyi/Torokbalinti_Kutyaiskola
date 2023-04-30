@@ -2,7 +2,7 @@
 
 export default [
     {
-        url: "https://placedog.net/200/200",
+        url: require('../images/dog_background_1.jpg'),
         name: "Engedelmes",
         address: "Törökbálint, Tó utca",
         place: "Törökbálinti Kutyaiskola",
@@ -11,7 +11,7 @@ export default [
         price: "2000 Ft",
     },
     {
-        url: "https://placedog.net/200/200/id=3",
+        url: require('../images/dog_background_2.jpg'),
         name: "Agility",
         address: "Törökbálint, Tó utca",
         place: "Törökbálinti Kutyaiskola",
@@ -20,7 +20,7 @@ export default [
         price: "2000 Ft",
     },
     {
-        url: "https://placedog.net/200/200/id=4",
+        url: require('../images/dog_background_3.jpg'),
         name: "Mantrailing",
         address: "Törökbálint, Tó utca",
         place: "Törökbálinti Kutyaiskola",
@@ -29,7 +29,7 @@ export default [
         price: "2000 Ft",
     },
     {
-        url: "https://placedog.net/200/200/id=5",
+        url: require('../images/dog_background_4.jpg'),
         name: "Trükk",
         address: "Törökbálint, Tó utca",
         place: "Törökbálinti Kutyaiskola",
@@ -38,7 +38,7 @@ export default [
         price: "2000 Ft",
     },
     {
-        url: "https://placedog.net/200/200/id=7",
+        url: require('../images/dog_background_5.jpg'),
         name: "Őrző-Védő",
         address: "Törökbálint, Tó utca",
         place: "Törökbálinti Kutyaiskola",

@@ -882,3 +882,10 @@
         transform: rotate(5deg) translateY(50%) scaleX(0.8) scaleY(0.9);
     }
 }
+
+@media only screen and (max-width: 1254px) {
+    .dog_body {
+        display: none;
+    }
+
+}
