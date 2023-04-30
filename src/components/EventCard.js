@@ -70,11 +70,3 @@ const EventCard = ({ url, name, description, time, itemIndex, address, place, pr
 }
 
 export default EventCard
-/*
-
-Köszönöm megtisztelő érdeklődését!
-
-A leírtak alapján teljesen a profilomba vág a pozíció, sokáig Németországban éltem és szívesen helyezkednék el német nyelvterületen. Bécs egyike a kedvenc Európai városaimnak, gyakran járok arra.
-Mivel React-re specializálódom, úgy gondolom, hogy érdemes felvennünk egymással a kapcsolatot, szívesen meghallgatnám az állással kapcsolatos részleteket. 
-
-*/

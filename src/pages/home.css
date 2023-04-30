@@ -51,10 +51,10 @@
 .main_category_pictures {
     height: 25vh;
     background-color: black;
-    opacity: 0.54;
     display: flex;
     justify-content: center;
-    align-items: end;
+    border: 2px solid #CCA000;
+
 
 }
 
@@ -72,25 +72,52 @@
     margin: 40px 5px 0px 5px;
 }
 
-/*----------------Facebook------------------------*/
+/*----------------FOOTER------------------------*/
 
-
-.ribbon_box {
+.footer {
     height: 100px;
     background-color: #001D3D;
     background-image: linear-gradient(-45deg,
-            transparent 60%,
+            transparent 50%,
             #CCA000 50%),
         linear-gradient(-45deg,
-            transparent 75%,
-            #CCA000 50%)
-        /* background-size: 4rem 2rem; */
-
-        /* display: flex;
+            transparent 50%,
+            #CCA000 50%);
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
+    gap: 150px;
 
 }
+
+.footer p {
+    color: #001D3D;
+    font-size: 20px;
+}
+
+.footer a {
+    color: #CCA000;
+    font-size: 20px;
+}
+
+.footer a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    background-color: #CCA000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+
+.footer a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 
 
 /*--------------------Event Card---------------------------------*/
@@ -101,12 +128,17 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 300px 0 150px 0;
-    /*  height: 500px;
-     */
+    margin: 0px 0 0px 0;
 
 
 
+}
+
+.event_section h2 {
+    margin-bottom: 40px;
+    font-size: 38px;
+    color: #CCA000;
+    text-shadow: 1px 1px #001D3D;
 }
 
 .eventCard_box {
@@ -143,7 +175,8 @@
 }
 
 .eventCard_img_container img {
-    height: 70%;
+    width: 100%;
+
 }
 
 .eventCard_body_container {
@@ -308,10 +341,6 @@
     background: linear-gradient(90deg, #EBEBEB, #001D3D);
 
     clip-path: polygon(100% 0, -140% 100%, 100% 100%);
-    
-
-
-
 
 
 }
@@ -360,7 +389,11 @@
     background-color: crimson;
 }
 
-/*-----------------------------------Contact and email box------------------------------*/
+.eventModal img {
+    height: 250px;
+}
+
+/*-----------------------------------Facebook, Contact and Google Maps box------------------------------*/
 
 .contact_and_facebook_box {
     display: flex;
@@ -373,18 +406,17 @@
 
 }
 
-/*  .contact_page_section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-} */
 
 .contact_form_box_container {
     background-color: #003566;
     padding: 20px;
     z-index: 1;
+    
+}
 
+.google_maps_box,
+.facebook_box {
+    width: 500px;
 }
 
 .google_maps,
@@ -397,6 +429,22 @@
 @media only screen and (min-width: 1795px) {
 
     .event_section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 200px 0 150px 0;
+        /*  height: 500px;
+         */
+
+
+
+    }
+
+
+    .event_section {
+
         height: 500px;
     }
 
@@ -411,31 +459,24 @@
     /*--------------------HERO PAGE-----------------*/
     .hero_page_container {
         height: 100vh;
-        box-sizing: border-box;
 
     }
 
     .home_page_links_container {
         display: none;
-        box-sizing: border-box;
     }
 
     .main_category_class {
-        /* max-width: auto; */
         height: 90vh;
     }
 
     .main_category_pictures {
         height: 100%;
-        /* object-fit: fill; */
-        /* height: 100%; */
-        /* width: 100%; */
         background-color: black;
-        /* opacity: 0.54; */
+
 
     }
 
-    /*-------------------CONTACT AND FACEBOOK PAGE----------*/
 
 
 
@@ -464,6 +505,10 @@
 
     .eventCard_container:nth-last-child(2):nth-child(3n + 1) {
         grid-column-end: 4;
+    }
+
+    .event_section h2 {
+        margin: 50px 0 50px 0;
     }
 }
 
