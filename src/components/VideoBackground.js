@@ -1,10 +1,11 @@
 import { useState, useRef } from "react";
-import dog_video_1 from "../videos/dog_video_1.mp4"
 
-const VideoBackground = ({video1, placeHolderPicture, categoryTitle}) => {
+const VideoBackground = ({dogVideo, placeHolderPicture, categoryTitle}) => {
   const [isHovering, setIsHovering] = useState(false);
   const videoRef = useRef(null);
   const [videoStarted, setVideoStarted] = useState(false);
+
+  console.log(window.innerWidth)
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -22,7 +23,7 @@ const VideoBackground = ({video1, placeHolderPicture, categoryTitle}) => {
     <div
       style={{
         position: 'relative',
-        width: '33.333333333333333333333333vw',
+        width: '33.33333333333333333333333333vw',
         height: '100%',
         overflow: 'hidden',
         border: "none",
@@ -59,7 +60,7 @@ const VideoBackground = ({video1, placeHolderPicture, categoryTitle}) => {
         muted
         onCanPlayThrough={() => setVideoStarted(true)}
       >
-        <source src={video1} type="video/mp4" />
+        <source src={dogVideo} type="video/mp4" />
       </video>
       <h1
         style={{
