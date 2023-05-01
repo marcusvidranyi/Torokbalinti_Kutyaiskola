@@ -1,24 +1,23 @@
-
 /*---------------------------------SCROLLBAR---------------------------*/
 ::-webkit-scrollbar {
     width: auto;
-    
+
 }
 
 ::-webkit-scrollbar-track {
     background: #EBEBEB;
-    
+
 }
 
 ::-webkit-scrollbar-thumb {
     background: #CCA000;
     height: 50vh;
-    
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #F5CC00;
-    
+
 }
 
 /*-------------------------------------------------------------------------*/
@@ -503,8 +502,8 @@
         display: flex;
         justify-content: center;
         border: 1px solid #CCA000;
-        
-        
+
+
 
     }
 
@@ -544,7 +543,7 @@
 }
 
 
-@media only screen and (max-width: 1254px) {
+/* @media only screen and (max-width: 1254px) {
 
     .eventCard_box {
         grid-template-columns: repeat(6, auto);
@@ -563,19 +562,26 @@
     .eventCard_container:nth-last-child(2):nth-child(3n + 1) {
         grid-column-end: 4;
     }
-}
+} */
 
 @media only screen and (max-width: 1076px) {
     .eventCard_box {
-        grid-template-columns: 1fr 1fr;
-        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
 
+    }
 
+    .eventCard_container:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: -1;
     }
 }
 
 
 @media only screen and (max-width: 895px) {
+
+    .event_section h2 {
+        font-size: 20px;
+    }
 
     .eventModal {
         position: fixed;
@@ -604,19 +610,9 @@
 
 
     .eventCard_box {
-        grid-template-columns: 1fr 1fr;
-        margin: auto;
-        /*  display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center; */
         font-size: 12px;
 
     }
-
-
-
-
 
     .contact_and_facebook_box {
         display: flex;
@@ -628,12 +624,6 @@
 
     }
 
-    /*  .contact_page_section {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        
-    } */
 
     .contact_form_box_container {
         background-color: #003566;
@@ -648,14 +638,215 @@
 }
 
 @media only screen and (max-width: 645px) {
-    .eventCard_box {
 
+
+    /*--------------------Event Card---------------------------------*/
+
+    .event_section {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        margin: 0;
+
 
 
     }
+
+    .event_section h2 {
+        margin: 20px 0 0 0;
+        color: #CCA000;
+        text-shadow: 1px 1px #001D3D;
+    }
+
+
+
+    .event_section h2 {
+        margin: 50px 0 50px 0;
+    }
+
+    .eventCard_container {
+        position: relative;
+        margin: 24px 10px 24px 10px;
+        width: 12em;
+        height: 300px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 0 30px 5px rgba(0, 29, 61, 0.5);
+        cursor: pointer;
+    }
+
+    .eventCard_img_container,
+    .eventCard_body_container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .eventCard_img_container img {
+        width: 100%;
+
+    }
+
+    .eventCard_body_container {
+        position: relative;
+    }
+
+    .eventCard_overlay {
+        position: relative;
+        width: 100%;
+        height: 215px;
+        background-color: rgb(204, 160, 0, 0.8);
+        opacity: 0;
+        transition: height linear 0.4s, opacity linear 0.2s;
+    }
+
+    .eventCard_container:hover .eventCard_overlay {
+        opacity: 1;
+        height: 150px;
+    }
+
+    .event_info {
+        background-color: #EBEBEB;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .event_date_and_time {
+        font-size: 1em;
+    }
+
+    .event_title,
+    .price {
+        color: #001D3D;
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 12px;
+    }
+
+    .info {
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+    }
+
+    .separator {
+        width: 30%;
+        height: 6px;
+        background-color: #17537a;
+        margin-bottom: 16px;
+        border-radius: 25px;
+    }
+
+    .additional-info {
+        border-top: 1px solid #bbb;
+        margin-top: 0px;
+        padding: 0px;
+        padding-bottom: 0;
+    }
+
+    .additional-info .info {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .info i {
+        color: #18537a;
+        font-size: 1.1em;
+        margin-right: 4px;
+    }
+
+    .info span {
+        color: #18537a;
+        font-weight: bolder;
+    }
+
+    .action {
+        color: #fff;
+        border: 3px solid #fff;
+        background-color: transparent;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        outline: none;
+        cursor: pointer;
+        padding: 12px;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        transition: background-color 0.4s, top 0.4s;
+    }
+
+    .eventCard_container:hover .action {
+        top: 50px;
+    }
+
+    .action:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /*----------------------------------------------------------*/
+
+    /*-------------------------Footer---------------------------*/
+
+    .footer {
+        height: 100px;
+        background-color: #001D3D;
+        background-image: linear-gradient(-45deg,
+                transparent 50%,
+                #CCA000 50%),
+            linear-gradient(-45deg,
+                transparent 50%,
+                #CCA000 50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+
+    }
+
+    .footer p {
+        color: #001D3D;
+        font-size: 20px;
+        position: absolute;
+        left: 15%;
+    }
+
+    .footer a {
+        color: #CCA000;
+        font-size: 20px;
+        position: absolute;
+        right: 5%;
+    }
+
+    .footer a::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: 0px;
+        left: 0;
+        background-color: #CCA000;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all .3s ease-in-out;
+    }
+
+    .footer a:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    /*----------------------------------------------------------*/
 
 }

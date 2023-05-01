@@ -1,15 +1,19 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
-const VideoBackground = ({dogVideo, placeHolderPicture, categoryTitle}) => {
+const VideoBackground = ({ dogVideo, placeHolderPicture, categoryTitle }) => {
   const [isHovering, setIsHovering] = useState(false);
-  const videoRef = useRef(null);
-  const [videoStarted, setVideoStarted] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  console.log(window.innerWidth)
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleMouseEnter = () => {
     setIsHovering(true);
-    setVideoStarted(true);
     videoRef.current.play();
   };
 
@@ -28,10 +32,10 @@ const VideoBackground = ({dogVideo, placeHolderPicture, categoryTitle}) => {
         overflow: 'hidden',
         border: "none",
       }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={windowWidth > 897 ? handleMouseEnter : null}
+      onMouseLeave={windowWidth > 897 ? handleMouseLeave : null}
     >
-      {videoStarted && (
+      {!isHovering && (
         <div
           style={{
             position: 'absolute',
@@ -41,7 +45,6 @@ const VideoBackground = ({dogVideo, placeHolderPicture, categoryTitle}) => {
             backgroundSize: 'cover',
             backgroundPosition: "center",
             opacity: "0.54",
-            
           }}
         ></div>
       )}
@@ -58,7 +61,6 @@ const VideoBackground = ({dogVideo, placeHolderPicture, categoryTitle}) => {
         }}
         loop
         muted
-        onCanPlayThrough={() => setVideoStarted(true)}
       >
         <source src={dogVideo} type="video/mp4" />
       </video>
@@ -74,10 +76,10 @@ const VideoBackground = ({dogVideo, placeHolderPicture, categoryTitle}) => {
           zIndex: 1,
         }}
       >
-      {categoryTitle}
+        {categoryTitle}
       </h1>
     </div>
   );
 }
 
-export default VideoBackground
+export default VideoBackground;
