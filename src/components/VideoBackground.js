@@ -27,11 +27,12 @@ const VideoBackground = ({ dogVideo, placeHolderPicture, categoryTitle }) => {
     <div
       style={{
         position: 'relative',
-        width: '33.33333333333333333333333333vw',
+        width: '100%',
         height: '100%',
         overflow: 'hidden',
         border: "none",
       }}
+      id="video_box"
       onMouseEnter={windowWidth > 897 ? handleMouseEnter : null}
       onMouseLeave={windowWidth > 897 ? handleMouseLeave : null}
     >

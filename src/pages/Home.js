@@ -35,7 +35,7 @@ function Home() {
 
 
     /*-----------CHECK OVERFLOW----------------------- */
-    /* const documentWidth = document.documentElement.offsetWidth;
+    const documentWidth = document.documentElement.offsetWidth;
 
     document.querySelectorAll('*').forEach(element => {
         const box = element.getBoundingClientRect();
@@ -44,7 +44,7 @@ function Home() {
             console.log(element);
             element.style.border = '1px solid red';
         }
-    }); */
+    });
 
 
     return (
@@ -59,19 +59,19 @@ function Home() {
                     {/* <Link to="/aszf">Ászf</Link> */}
                 </div>
                 <div className="main_category_class">
-                    <Link to="/hobbi" className="main_category_pictures">
+                    <Link to="/hobbi" className="main_category_videos">
                         <VideoBackground
                             dogVideo={dog_video_1}
                             placeHolderPicture={dog_screenshot}
                             categoryTitle={"HOBBI"} />
                     </Link>
-                    <Link to="/sport" className="main_category_pictures">
+                    <Link to="/sport" className="main_category_videos">
                         <VideoBackground
                             dogVideo={dog_video_2}
                             placeHolderPicture={dog_screenshot_2}
                             categoryTitle={"SPORT"} />
                     </Link>
-                    <Link to="/szolgalati" className="main_category_pictures">
+                    <Link to="/szolgalati" className="main_category_videos">
                         <VideoBackground
                             dogVideo={dog_video_3}
                             placeHolderPicture={dog_screenshot_3}
@@ -101,9 +101,15 @@ function Home() {
             <section className="contact_and_facebook_box">
 
                 <div className="google_maps_box">
-                    <div className="google_maps" dangerouslySetInnerHTML={{
-                        __html: `<iframe width="100%" height="864.2" "frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=T%C3%B6r%C3%B6kb%C3%A1lint%20T%C3%B3%20utca%20+(T%C3%B6r%C3%B6kb%C3%A1linti%20Kutyaiskola)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>`
-                    }} style={{ zIndex: "1" }} />
+                    {window.innerWidth > 645 ?
+                        <div className="google_maps" dangerouslySetInnerHTML={{
+                            __html: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.553185550362!2d18.90941821236936!3d47.45109647105578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e018fb14a27f%3A0xc87d8c5eb927e5b3!2zVMO2csO2a2LDoWxpbnRpIEt1dHlhaXNrb2xh!5e1!3m2!1sen!2shu!4v1682971994603!5m2!1sen!2shu" width="460px" height="864.2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+                        }} style={{ zIndex: "1" }} />
+                        :
+                        <div className="google_maps" dangerouslySetInnerHTML={{
+                            __html: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.553185550362!2d18.90941821236936!3d47.45109647105578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e018fb14a27f%3A0xc87d8c5eb927e5b3!2zVMO2csO2a2LDoWxpbnRpIEt1dHlhaXNrb2xh!5e1!3m2!1sen!2shu!4v1682971994603!5m2!1sen!2shu" width="${Math.round((window.innerWidth /100) * 75)}px" height="464.2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+                        }} style={{ zIndex: "1" }} />
+                    }
                 </div>
 
 
@@ -112,9 +118,15 @@ function Home() {
                     <ContactForm />
                 </div>
                 <div className="facebook_box">
-                    <div className="facebook_feed" dangerouslySetInnerHTML={{
-                        __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=600px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height=864.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
-                    }} style={{ zIndex: "1" }} />
+                    {window.innerWidth > 645 ?
+                        <div className="facebook_feed" dangerouslySetInnerHTML={{
+                            __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=460px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="460" height=864.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
+                        }} style={{ zIndex: "1" }} />
+                        :
+                        <div className="facebook_feed" dangerouslySetInnerHTML={{
+                            __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=${Math.round((window.innerWidth /100) * 75)}px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height=464.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
+                        }} style={{ zIndex: "1" }} />
+                    }
                 </div>
 
             </section>
