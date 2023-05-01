@@ -47,19 +47,19 @@ function Home() {
                 <div className="main_category_class">
                     <Link to="/hobbi" className="main_category_pictures">
                         <VideoBackground
-                            video1={dog_video_1}
+                            dogVideo={dog_video_1}
                             placeHolderPicture={dog_screenshot}
                             categoryTitle={"HOBBI"} />
                     </Link>
                     <Link to="/sport" className="main_category_pictures">
                         <VideoBackground
-                            video1={dog_video_2}
+                            dogVideo={dog_video_2}
                             placeHolderPicture={dog_screenshot_2}
                             categoryTitle={"SPORT"} />
                     </Link>
                     <Link to="/szolgalati" className="main_category_pictures">
                         <VideoBackground
-                            video1={dog_video_3}
+                            dogVideo={dog_video_3}
                             placeHolderPicture={dog_screenshot_3}
                             categoryTitle={"SZOLGÁLATI"} />
                     </Link>
