@@ -33,6 +33,20 @@ function Home() {
     console.log(window.innerWidth); */
 
 
+
+    /*-----------CHECK OVERFLOW----------------------- */
+    /* const documentWidth = document.documentElement.offsetWidth;
+
+    document.querySelectorAll('*').forEach(element => {
+        const box = element.getBoundingClientRect();
+
+        if (box.left < 0 || box.right > documentWidth) {
+            console.log(element);
+            element.style.border = '1px solid red';
+        }
+    }); */
+
+
     return (
         <div className="home_container">
             <section className="hero_page_container">

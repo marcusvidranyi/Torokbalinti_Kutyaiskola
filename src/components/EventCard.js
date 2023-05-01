@@ -44,7 +44,7 @@ const EventCard = ({ url, name, description, time, itemIndex, address, place, pr
                         <p className="event_title">{name}</p>
                         <div className="separator"></div>
                         <p className="info">{address}</p>
-                        <h3 className="far fa-calendar-alt"> 
+                        <h3 className="event_date_and_time"> 
                             {time}
                         </h3>
 
