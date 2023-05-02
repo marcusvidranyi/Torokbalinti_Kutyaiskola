@@ -12,7 +12,7 @@ const NavBar = () => {
     const [isMenuClicked, setIsMenuClicked] = useState(false);
 
     //toggle burger menu change
-    
+
 
     const updateMenu = () => {
         if (!isMenuClicked) {
@@ -25,7 +25,7 @@ const NavBar = () => {
         }
         setIsMenuClicked(!isMenuClicked)
     }
-    
+
 
 
     return (
@@ -42,6 +42,7 @@ const NavBar = () => {
                 </div>
                 <div className={window.innerWidth > 900 ? "menu visible" : menuClass}>
                     <div className="burger_links">
+                        <Link to="/">HOME</Link>
                         <Link to="/kikepzok">KIKÉPZŐK</Link>
                         <Link to="/galeria">GALÉRIA</Link>
                         <Link to="/elerhetoseg">ELÉRHETŐSÉG</Link>

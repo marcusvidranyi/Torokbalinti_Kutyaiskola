@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const EventModal = ({ url, name, description, time, itemIndex, closeModal }) => {
     return (

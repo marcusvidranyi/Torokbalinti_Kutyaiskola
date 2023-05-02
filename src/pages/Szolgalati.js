@@ -1,9 +1,14 @@
-import React from 'react'
+import CategoryPage from "../components/CategoryPage";
+import categoryData from "../data/categoryData";
 
-const Szolgalati = () => {
+const Sport = () => {
   return (
-    <div>Szolgalati</div>
+    <div>
+      <CategoryPage
+        categoryData={categoryData}
+        categoryName={"SZOLGÁLATI"} />
+    </div>
   )
 }
 
-export default Szolgalati
+export default Sport

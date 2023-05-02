@@ -1,0 +1,24 @@
+.category_box {
+    height: 90vh;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #CCA000;
+}
+
+.subCategory_titles {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.subCategory_titles h2 {
+    cursor: pointer;
+
+}
+
+.subcategory_box {
+    width: 75vw;
+}
