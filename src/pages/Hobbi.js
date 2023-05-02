@@ -1,9 +1,15 @@
-import React from 'react'
+import CategoryPage from "../components/CategoryPage";
+import categoryData from "../data/categoryData";
 
-const Hobbi = () => {
+
+const Sport = () => {
   return (
-    <div>Hobbi</div>
+    <div>
+      <CategoryPage
+        categoryData={categoryData}
+        categoryName={"HOBBI"} />
+    </div>
   )
 }
 
-export default Hobbi
+export default Sport

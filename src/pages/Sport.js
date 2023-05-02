@@ -1,8 +1,13 @@
-import React from 'react'
+import CategoryPage from "../components/CategoryPage";
+import categoryData from "../data/categoryData";
 
 const Sport = () => {
   return (
-    <div>Sport</div>
+    <div>
+      <CategoryPage
+        categoryData={categoryData}
+        categoryName={"SPORT"} />
+    </div>
   )
 }
 

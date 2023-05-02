@@ -35,7 +35,7 @@ function Home() {
 
 
     /*-----------CHECK OVERFLOW----------------------- */
-    const documentWidth = document.documentElement.offsetWidth;
+    /* const documentWidth = document.documentElement.offsetWidth;
 
     document.querySelectorAll('*').forEach(element => {
         const box = element.getBoundingClientRect();
@@ -44,7 +44,7 @@ function Home() {
             console.log(element);
             element.style.border = '1px solid red';
         }
-    });
+    }); */
 
 
     return (
