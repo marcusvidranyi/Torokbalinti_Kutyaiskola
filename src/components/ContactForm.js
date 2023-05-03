@@ -20,13 +20,13 @@ const ContactForm = () => {
                     <div className="row50">
                         <div className="inputBox">
                             <span>Vezetéknév</span>
-                            <input type="text" name="last_name" placeholder="Kovács" /* onChange={e => setLastName(e.target.value)} */ />
+                            <input type="text" name="last_name" /* onChange={e => setLastName(e.target.value)} */ />
                             {/*  {error && lastName.length <= 0 ?
                                         <span>A vezetéknevet nem hagyhatja üresen!</span> : ""} */}
                         </div>
                         <div className="inputBox">
                             <span>Keresztnév</span>
-                            <input type="text" name="first_name" placeholder="János" /* onChange={e => setFirstName(e.target.value)}  */ />
+                            <input type="text" name="first_name" /* onChange={e => setFirstName(e.target.value)}  */ />
                             {/*  {error && firstName.length <= 0 ?
                                         <span>A keresztnevet nem hagyhatja üresen!</span> : ""} */}
                         </div>
@@ -38,7 +38,6 @@ const ContactForm = () => {
                                 type="email"
                                 name="user_email"
                                 pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}"
-                                placeholder="Az Ön e-mail címe"
                             /* onChange={e => setUserEmail(e.target.value)} */
                             />
                             {/*   {error && userEmail.length <= 0 ?
@@ -46,7 +45,7 @@ const ContactForm = () => {
                         </div>
                         <div className="inputBox">
                             <span>Telefon</span>
-                            <input type="tel" name="user_phone" placeholder="Az Ön telefonszáma (opcionális)" />
+                            <input type="tel" name="user_phone"  />
                         </div>
                     </div>
                     <div className="row100">
