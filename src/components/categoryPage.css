@@ -1,10 +1,10 @@
 .category_box {
     height: 90vh;
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #CCA000;
+    background-color: #EBEBEB;
 }
 
 .subCategory_titles {
@@ -12,13 +12,95 @@
     flex-direction: row;
     gap: 50px;
 
-}
-
-.subCategory_titles h2 {
-    cursor: pointer;
 
 }
 
 .subcategory_box {
     width: 75vw;
+}
+
+.subCategory_titles h2 {
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.subCategory_titles {
+    position: relative;
+    background-color: aqua;
+    width: 690px;
+    height: 50px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    z-index: 1;
+
+}
+
+.animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background-color: blue;
+    width: 100px;
+    border-radius: 3px;
+    z-index: -1;
+    transition: all .5s ease 0s;
+}
+
+.subCategory_titles h2:nth-child(1) {
+    width: 100px;
+}
+
+
+.start_PULLER,
+.start_ŐRZŐ-VÉDŐ,
+.subCategory_titles h2:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+}
+
+.subCategory_titles h2:nth-child(2) {
+    width: 110px;
+}
+
+
+.start_AGILITY,
+.start_ENGEDELMES,
+.subCategory_titles h2:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 125px;
+}
+
+.subCategory_titles h2:nth-child(3) {
+    width: 100px;
+}
+
+.start_OBEDIENCE,
+.subCategory_titles h2:nth-child(3):hover~.animation {
+    width: 120px;
+    left: 265px;
+}
+
+
+.subCategory_titles h2:nth-child(4) {
+    width: 100px;
+}
+
+.start_IGP,
+.subCategory_titles h2:nth-child(4):hover~.animation {
+    width: 70px;
+    left: 430px;
+}
+
+.subCategory_titles h2:nth-child(5) {
+    width: 150px;
+}
+
+.start_MANTRAILING,
+.subCategory_titles h2:nth-child(5):hover~.animation {
+    width: 130px;
+    left: 560px;
 }
