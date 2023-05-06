@@ -104,11 +104,11 @@ function Home() {
                     {window.innerWidth > 645 ?
                         <div className="google_maps" dangerouslySetInnerHTML={{
                             __html: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.553185550362!2d18.90941821236936!3d47.45109647105578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e018fb14a27f%3A0xc87d8c5eb927e5b3!2zVMO2csO2a2LDoWxpbnRpIEt1dHlhaXNrb2xh!5e1!3m2!1sen!2shu!4v1682971994603!5m2!1sen!2shu" width="460px" height="864.2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
-                        }} style={{ zIndex: "1" }} />
+                        }} />
                         :
                         <div className="google_maps" dangerouslySetInnerHTML={{
                             __html: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.553185550362!2d18.90941821236936!3d47.45109647105578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e018fb14a27f%3A0xc87d8c5eb927e5b3!2zVMO2csO2a2LDoWxpbnRpIEt1dHlhaXNrb2xh!5e1!3m2!1sen!2shu!4v1682971994603!5m2!1sen!2shu" width="${Math.round((window.innerWidth /100) * 75)}px" height="464.2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
-                        }} style={{ zIndex: "1" }} />
+                        }} />
                     }
                 </div>
 
@@ -121,11 +121,11 @@ function Home() {
                     {window.innerWidth > 645 ?
                         <div className="facebook_feed" dangerouslySetInnerHTML={{
                             __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=460px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="460" height=864.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
-                        }} style={{ zIndex: "1" }} />
+                        }} />
                         :
                         <div className="facebook_feed" dangerouslySetInnerHTML={{
                             __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=${Math.round((window.innerWidth /100) * 75)}px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height=464.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
-                        }} style={{ zIndex: "1" }} />
+                        }} />
                     }
                 </div>
 

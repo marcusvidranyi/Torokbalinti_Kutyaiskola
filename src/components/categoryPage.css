@@ -1,10 +1,11 @@
 .category_box {
-    height: 90vh;
+    height: 40vh;
     padding-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #EBEBEB;
+
 }
 
 .subCategory_titles {
@@ -30,8 +31,8 @@
 
 .subCategory_titles {
     position: relative;
-    background-color: aqua;
-    width: 690px;
+    
+    width: auto;
     height: 50px;
     border-radius: 3px;
     margin-bottom: 50px;
@@ -41,9 +42,9 @@
 
 .animation {
     position: absolute;
-    height: 100%;
-    top: 0;
-    background-color: blue;
+    height: 15%;
+    top: 100%;
+    background-color: #001D3D;
     width: 100px;
     border-radius: 3px;
     z-index: -1;
@@ -51,48 +52,49 @@
 }
 
 .subCategory_titles h2:nth-child(1) {
-    width: 100px;
+    width: 150px;
 }
 
 
 .start_PULLER,
 .start_ŐRZŐ-VÉDŐ,
 .subCategory_titles h2:nth-child(1):hover~.animation {
-    width: 100px;
+    width: 150px;
     left: 0;
 }
 
 .subCategory_titles h2:nth-child(2) {
-    width: 110px;
+    width: 150px;
 }
 
 
 .start_AGILITY,
 .start_ENGEDELMES,
 .subCategory_titles h2:nth-child(2):hover~.animation {
-    width: 110px;
-    left: 125px;
+    width: 150px;
+    left: 190px;
 }
 
 .subCategory_titles h2:nth-child(3) {
-    width: 100px;
+    width: 150px;
 }
 
+.start_ŐRZŐ-VÉDŐ,
 .start_OBEDIENCE,
 .subCategory_titles h2:nth-child(3):hover~.animation {
-    width: 120px;
-    left: 265px;
+    width: 150px;
+    left: 395px;
 }
 
 
 .subCategory_titles h2:nth-child(4) {
-    width: 100px;
+    width: 150px;
 }
 
 .start_IGP,
 .subCategory_titles h2:nth-child(4):hover~.animation {
-    width: 70px;
-    left: 430px;
+    width: 150px;
+    left: 600px;
 }
 
 .subCategory_titles h2:nth-child(5) {
@@ -101,6 +103,32 @@
 
 .start_MANTRAILING,
 .subCategory_titles h2:nth-child(5):hover~.animation {
-    width: 130px;
-    left: 560px;
+    width: 150px;
+    left: 800px;
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+
+.subCategory_image_box img {
+    height: 350px;
+}
+
+
+/*-------------------------------SUBCATEGORY BACKGROUND DECORATION-----------------*/
+
+.category_box {
+    position: relative;
+}
+
+.category_box::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #EBEBEB;
+    clip-path: polygon(100% 0, 0 100%, 100% 110%);
 }
