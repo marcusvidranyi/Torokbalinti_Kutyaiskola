@@ -1,0 +1,75 @@
+.kikepzok_box {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kikepzok_box h1 {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+
+/*Szabo Balazs*/
+
+.balazs_box img {
+    float: left;
+    width: 400px;
+    margin: 20px 30px 30px 30px;
+}
+
+.balazs_box p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.balazs_dogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balazs_dogs img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin: 0 50px 0 0;
+}
+
+
+
+
+/*György Nikolett*/
+
+.niki_box img {
+    float: left;
+    width: 400px;
+    margin: 0px 30px 30px 30px;
+}
+
+.niki_box h3 {
+    margin-top: 50px;
+}
+
+.niki_box p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.niki_dogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.niki_dogs img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin: 0 50px 0 0;
+}

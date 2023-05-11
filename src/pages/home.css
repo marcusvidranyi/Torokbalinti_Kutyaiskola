@@ -201,7 +201,7 @@ html {
 .eventCard_container {
     position: relative;
     margin: 24px 10px 24px 10px;
-    width: 20em;
+    width: 15em;
     height: 570px;
     overflow: hidden;
     background-color: #fff;
@@ -309,7 +309,7 @@ html {
     cursor: pointer;
     padding: 12px;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
     letter-spacing: 2px;
     transition: background-color 0.4s, top 0.4s;
@@ -540,7 +540,7 @@ html {
 }
 
 
-@media only screen and (max-width: 1795px) {
+@media only screen and (max-width: 1395px) {
 
     .eventCard_box {
         grid-template-columns: repeat(6, auto);
