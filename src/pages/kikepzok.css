@@ -1,9 +1,13 @@
 .kikepzok_box {
-    
+
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    background: linear-gradient(0deg, #EBEBEB, #001D3D);
+    background-image: linear-gradient(135deg, transparent 0%, transparent 21%, rgb(204, 160, 0) 21%, rgb(204, 160, 0) 48%, transparent 48%, transparent 95%, rgb(245, 204, 0) 95%, rgb(245, 204, 0) 100%), linear-gradient(45deg, transparent 0%, transparent 6%, rgb(253, 225, 42) 6%, rgb(253, 225, 42) 13%, rgb(245, 204, 0) 13%, rgb(245, 204, 0) 32%, transparent 32%, transparent 100%), linear-gradient(90deg, rgb(235, 235, 235), rgb(235, 235, 235));
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 
 }
 
@@ -20,21 +24,35 @@
 
 .kikepzok_box h1 {
     text-align: center;
-    margin-top: 100px;
-    position: relative;
-    bottom: 70px;
-    
+    /* margin-top: 100px; */
+    padding: 25px 0 25px 0;
+    margin: 0;
+    /* bottom: 70px; */
+
 
 }
 
 
 /*Szabo Balazs*/
+.balazs_box {
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 53, 102, 0.7);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 1500px;
+    color: #FFFF;
+
+}
+
+.balazs_box h3 {
+    margin-top: 50px;
+}
 
 .balazs_box img {
     float: left;
-    width: 400px;
+    max-width: 400px;
     margin: 20px 30px 30px 30px;
 }
+
 
 .balazs_box p {
     text-align: justify;
@@ -42,32 +60,43 @@
     margin-right: 50px;
 }
 
+
 .clearfix {
     overflow: auto;
 }
 
-.balazs_dogs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .balazs_dogs img {
     border-radius: 50%;
     width: 55px;
     height: 55px;
     margin: 0 50px 0 0;
+    transition: all .5s ease 0s;
+
 }
 
+.balazs_dogs img:hover {
+    transform: scale(1.5);
+    transition: all .5s ease 0s;
 
-
+}
 
 /*György Nikolett*/
+
+.niki_box {
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 53, 102, 0.7);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    max-width: 1500px;
+    color: #FFFF;
+}
 
 .niki_box img {
     float: left;
     width: 400px;
-    margin: 0px 30px 30px 30px;
+    margin: 20px 30px 30px 30px;
 }
 
 .niki_box h3 {
@@ -80,15 +109,16 @@
     margin-right: 50px;
 }
 
-.niki_dogs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .niki_dogs img {
     border-radius: 50%;
     width: 55px;
     height: 55px;
     margin: 0 50px 0 0;
+    transition: all .5s ease 0s;
+}
+
+.niki_dogs img:hover {
+    transform: scale(1.5);
+    transition: all .5s ease 0s;
+
 }
