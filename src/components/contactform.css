@@ -75,3 +75,9 @@
     box-shadow: 0 0 5px 5px #A8894A !important;
     transition: all 0.2s linear;
 }
+
+@media screen and (max-width: 500px) {
+    .inputBox input {
+        width: 35vw;
+    }
+}
