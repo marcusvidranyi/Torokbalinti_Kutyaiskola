@@ -450,7 +450,8 @@ html {
 
 
 .contact_form_box_container {
-    background-color: #003566;
+    background-color: none;
+    backdrop-filter: blur(50px);
     padding: 20px;
 
 }
@@ -633,7 +634,7 @@ html {
 
 
     .contact_form_box_container {
-        background-color: #003566;
+        
         border-radius: 0;
         padding: 20px;
         /* width: 75vw; */
