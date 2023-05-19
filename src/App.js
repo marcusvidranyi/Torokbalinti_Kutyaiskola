@@ -3,7 +3,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home';
 import Kikepzok from './pages/Kikepzok';
 import Galeria from './pages/Galeria';
-import Elerhetoseg from './pages/Elerhetoseg';
 import Aszf from './pages/Aszf';
 import Panzio from './pages/Panzio';
 import Hirek from './pages/Hirek';
@@ -22,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/kikepzok" element={<Kikepzok />} />
         <Route path="/galeria" element={<Galeria />} />
-        <Route path="/elerhetoseg" element={<Elerhetoseg />} />
+        {/* <Route path="/elerhetoseg" element={<Elerhetoseg />} /> */}
         <Route path="/aszf" element={<Aszf />} />
         <Route path="/panzio" element={<Panzio />} />
         <Route path="/hirek" element={<Hirek />} />
