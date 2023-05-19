@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
 import "./home.css";
 
 import NavBar from "../components/NavBar";
@@ -47,15 +48,33 @@ function Home() {
     }); */
 
 
+    /*-----------Page Navigation----------------------- */
+
+    const elerhetosegSection = useRef(null);
+
+    
+
+    const scrollToRef = (ref) => {
+        ref.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+          speed: 'slow'
+        });
+      };
+
+
+
+
     return (
         <div className="home_container">
             <section className="hero_page_container">
-                <NavBar />
+                <NavBar ref={elerhetosegSection}/>
                 <div className="home_page_links_container">
                     <Link to="/">Home</Link>
                     <Link to="/kikepzok">Kiképzők</Link>
                     <Link to="/galeria">Gagléria</Link>
-                    <Link to="/elerhetoseg">Elérhetőség</Link>
+                    <Link onClick={() => scrollToRef(elerhetosegSection)}>Elérhetőség</Link>
                     {/* <Link to="/aszf">Ászf</Link> */}
                 </div>
                 <div className="main_category_class">
@@ -80,7 +99,7 @@ function Home() {
 
                 </div>
                 <div className="home_page_links_container">
-                    <Link to="/elerhetoseg">Rólunk</Link>
+                    <Link onClick={() => scrollToRef(elerhetosegSection)}>Elérhetőség</Link>
                     <Link to="/panzio">Panzió</Link>
                     <Link to="/hirek">Hírek</Link>
                     <Link to="/partnerek">Partnerek</Link>
@@ -98,7 +117,7 @@ function Home() {
 
 
             </section>
-            <section className="contact_and_facebook_box">
+            <section className="contact_and_facebook_box" ref={elerhetosegSection}>
 
                 <div className="google_maps_box">
                     {window.innerWidth > 645 ?

@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import tbk_logo10 from "../images/tbk_logo10.png"
 
-const NavBar = () => {
+const NavBar = forwardRef((props, ref) => {
+
 
 
     // to change burger classes
@@ -26,6 +27,20 @@ const NavBar = () => {
         setIsMenuClicked(!isMenuClicked)
     }
 
+    /*-----------Page Navigation----------------------- */
+
+
+
+
+    const scrollToRef = (ref) => {
+        ref.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest',
+            speed: 'slow'
+        });
+    };
+
 
 
     return (
@@ -45,7 +60,7 @@ const NavBar = () => {
                         <Link to="/">HOME</Link>
                         <Link to="/kikepzok">KIKÉPZŐK</Link>
                         <Link to="/galeria">GALÉRIA</Link>
-                        <Link to="/elerhetoseg">ELÉRHETŐSÉG</Link>
+                        <Link onClick={() => scrollToRef(ref)}>ELÉRHETŐSÉG</Link>
                         <Link to="/panzio">PANZIÓ</Link>
                         <Link to="/hirek">HíREK</Link>
                         <Link to="/partnerek">PARTNEREK</Link>
@@ -56,6 +71,6 @@ const NavBar = () => {
             </div>
         </>
     )
-}
+});
 
 export default NavBar
