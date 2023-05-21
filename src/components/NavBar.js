@@ -27,21 +27,6 @@ const NavBar = forwardRef((props, ref) => {
         setIsMenuClicked(!isMenuClicked)
     }
 
-    /*-----------Page Navigation----------------------- */
-
-
-
-
-    const scrollToRef = (ref) => {
-        ref.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest',
-            speed: 'slow'
-        });
-    };
-
-
 
     return (
         <>
@@ -60,7 +45,7 @@ const NavBar = forwardRef((props, ref) => {
                         <Link to="/">HOME</Link>
                         <Link to="/kikepzok">KIKÉPZŐK</Link>
                         <Link to="/galeria">GALÉRIA</Link>
-                        <Link onClick={() => scrollToRef(ref)}>ELÉRHETŐSÉG</Link>
+                        <Link to="/?scroll=true">ELÉRHETŐSÉG</Link>
                         <Link to="/panzio">PANZIÓ</Link>
                         <Link to="/hirek">HíREK</Link>
                         <Link to="/partnerek">PARTNEREK</Link>
