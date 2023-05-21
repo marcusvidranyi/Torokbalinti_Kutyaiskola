@@ -56,7 +56,7 @@ html {
 .main_category_class {
     display: flex;
     justify-content: center;
-    padding-top: 7.5vh;
+    padding-top: 10vh;
     gap: 100px;
     overflow: hidden;
     text-align: center;
@@ -529,7 +529,7 @@ html {
     }
  */
     .main_category_class {
-        height: 60vh;
+        height: 70vh;
 
     }
 
@@ -579,15 +579,6 @@ html {
 
     .eventCard_container:nth-last-child(2):nth-child(3n + 1) {
         grid-column-end: -1;
-    }
-
-    .google_maps_box,
-    .facebook_box {
-        /* margin-bottom: 50px; */
-    }
-
-    .contact_and_facebook_box {
-        /* margin: 0; */
     }
 
 

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useRef, useState, useEffect } from "react";
 import "./home.css";
 
 import NavBar from "../components/NavBar";
@@ -44,6 +44,17 @@ function Home() {
     /*-----------Page Navigation----------------------- */
 
     const elerhetosegSection = useRef(null);
+    const location = useLocation();
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        console.log(params)
+        const shouldScroll = params.get('scroll') === 'true';
+    
+        if (shouldScroll && elerhetosegSection.current) {
+            elerhetosegSection.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, [location]);
 
 
 
@@ -102,7 +113,7 @@ function Home() {
                     }
                 </div>
 
-                        
+
                 <div className="contact_form_box_container">
                     <InfoBox />
                     <ContactForm />
