@@ -33,8 +33,8 @@ const VideoBackground = ({ dogVideo, placeHolderPicture, categoryTitle }) => {
         border: "none",
       }}
       id="video_box"
-      onMouseEnter={windowWidth > 897 ? handleMouseEnter : null}
-      onMouseLeave={windowWidth > 897 ? handleMouseLeave : null}
+      onMouseEnter={windowWidth > 320 ? handleMouseEnter : null}
+      onMouseLeave={windowWidth > 320 ? handleMouseLeave : null}
     >
       {!isHovering && (
         <div

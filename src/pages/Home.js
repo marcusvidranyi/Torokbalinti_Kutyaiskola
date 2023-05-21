@@ -28,13 +28,6 @@ import dog_video_3 from "../videos/dog_video_3.mp4";
 
 function Home() {
 
-    /* let squareLength = (100 * Math.sqrt(2));
-    console.log(squareLength);
-
-    console.log(window.innerWidth); */
-
-
-
     /*-----------CHECK OVERFLOW----------------------- */
     /* const documentWidth = document.documentElement.offsetWidth;
 
@@ -52,31 +45,15 @@ function Home() {
 
     const elerhetosegSection = useRef(null);
 
-    
-
-    const scrollToRef = (ref) => {
-        ref.current.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-          inline: 'nearest',
-          speed: 'slow'
-        });
-      };
-
-
 
 
     return (
         <div className="home_container">
             <section className="hero_page_container">
-                <NavBar ref={elerhetosegSection}/>
-                <div className="home_page_links_container">
-                    <Link to="/">Home</Link>
-                    <Link to="/kikepzok">Kiképzők</Link>
-                    <Link to="/galeria">Gagléria</Link>
-                    <Link onClick={() => scrollToRef(elerhetosegSection)}>Elérhetőség</Link>
-                    {/* <Link to="/aszf">Ászf</Link> */}
-                </div>
+                <NavBar ref={elerhetosegSection} />
+                <section className="welcome_section">
+                    <h1>WELCOME</h1>
+                </section>
                 <div className="main_category_class">
                     <Link to="/hobbi" className="main_category_videos">
                         <VideoBackground
@@ -98,17 +75,11 @@ function Home() {
                     </Link>
 
                 </div>
-                <div className="home_page_links_container">
-                    <Link onClick={() => scrollToRef(elerhetosegSection)}>Elérhetőség</Link>
-                    <Link to="/panzio">Panzió</Link>
-                    <Link to="/hirek">Hírek</Link>
-                    <Link to="/partnerek">Partnerek</Link>
-                </div>
             </section>
             <Ball />
             <Dog />
             <section className="event_section oxford_blue">
-                <h2>PROGRAMOK</h2>
+                {/* <h2>PROGRAMOK</h2> */}
                 <div className="eventCard_box">
                     {eventData.map((event, index) => {
                         return <EventCard {...event} key={index} itemIndex={index} />
@@ -126,12 +97,12 @@ function Home() {
                         }} />
                         :
                         <div className="google_maps" dangerouslySetInnerHTML={{
-                            __html: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.553185550362!2d18.90941821236936!3d47.45109647105578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e018fb14a27f%3A0xc87d8c5eb927e5b3!2zVMO2csO2a2LDoWxpbnRpIEt1dHlhaXNrb2xh!5e1!3m2!1sen!2shu!4v1682971994603!5m2!1sen!2shu" width="${Math.round((window.innerWidth /100) * 75)}px" height="464.2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+                            __html: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.553185550362!2d18.90941821236936!3d47.45109647105578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e018fb14a27f%3A0xc87d8c5eb927e5b3!2zVMO2csO2a2LDoWxpbnRpIEt1dHlhaXNrb2xh!5e1!3m2!1sen!2shu!4v1682971994603!5m2!1sen!2shu" width="${Math.round((window.innerWidth / 100) * 75)}px" height="464.2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
                         }} />
                     }
                 </div>
 
-
+                        
                 <div className="contact_form_box_container">
                     <InfoBox />
                     <ContactForm />
@@ -143,7 +114,7 @@ function Home() {
                         }} />
                         :
                         <div className="facebook_feed" dangerouslySetInnerHTML={{
-                            __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=${Math.round((window.innerWidth /100) * 75)}px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height=464.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
+                            __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=${Math.round((window.innerWidth / 100) * 75)}px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height=464.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
                         }} />
                     }
                 </div>
