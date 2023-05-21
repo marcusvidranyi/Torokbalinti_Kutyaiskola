@@ -33,14 +33,36 @@ html {
 
 }
 
+.welcome_section {
+    height: 35vh;
+    background-image: url("../images/hero_background_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid black;
+    /* border-bottom: 4px solid black; */
+}
+
+.welcome_section h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    color: #ffff;
+}
+
 .main_category_class {
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding-top: 7.5vh;
+    gap: 100px;
     overflow: hidden;
-    background-color: #CCA000;
     text-align: center;
     position: relative;
+    z-index: 0;
+    border-top: 4px solid black;
 
 
 
@@ -48,6 +70,7 @@ html {
 
 .main_category_class {
     height: 40vh;
+    background-image: linear-gradient(0deg, rgba(3, 121, 241, 0) 0%, rgba(3, 121, 241, 0) 9%, transparent 9%, transparent 16%, rgba(11, 75, 199, 0) 16%, rgba(11, 75, 199, 0) 49%, rgba(9, 86, 209, 0) 49%, rgba(9, 86, 209, 0) 100%), linear-gradient(135deg, rgb(0, 53, 102) 0%, rgb(0, 53, 102) 31%, rgb(0, 29, 61) 31%, rgb(0, 29, 61) 37%, transparent 37%, transparent 56%, rgb(0, 53, 102) 56%, rgb(0, 53, 102) 100%), linear-gradient(90deg, rgb(235, 235, 235), rgb(235, 235, 235));
 }
 
 .main_category_videos {
@@ -55,19 +78,31 @@ html {
     display: flex;
     justify-content: center;
     background-color: black;
-    border-left: 1px solid #EBEBEB;
-    border-right: 1px solid #EBEBEB;
-    width: 33.3333333%;
+    width: 400px;
+    position: relative;
+    border: 4px solid black;
 
 }
 
-.main_category_videos:nth-child(1) {
-    border-left: 0px;
+.main_category_videos::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 150ms ease-in-out;
+    cursor: pointer;
+    transform: translate(-50px, 50px);
+    border: 20px solid #CCA000;
 }
 
-.main_category_videos:nth-child(3) {
-    border-right: 0px;
+.main_category_videos:hover::before {
+    transform: translate(0);
 }
+
+
 
 /*-----------MAIN 3 CATEGORY SELECTOR TEXT--------*/
 .category_image_text_hobbi {
@@ -102,26 +137,13 @@ html {
 }
 
 
-.home_page_links_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.home_page_links_container>a {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 13px;
-    margin: 40px 5px 0px 5px;
-}
-
 /*----------------FOOTER------------------------*/
 
 .footer {
     height: 100px;
     background-color: #001D3D;
-    background-image: radial-gradient(circle at 45% 67%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 16% 36%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 69% 64%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 88% 23%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 43% 26%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 66% 45%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 71% 41%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 89% 76%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 70% 62%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 88% 20%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 57% 91%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 98% 4%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 28% 61%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 48% 96%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 13% 61%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 44% 44%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 20% 19%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),linear-gradient(135deg, rgb(204,160,0),rgb(0,53,102));
+    border-top: 4px solid black;
+    background-color: #CCA000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,16 +190,10 @@ html {
     align-items: center;
     text-align: center;
     margin: 0;
+    background-color: #CCA000;
 
 
 
-}
-
-.event_section h2 {
-    margin-bottom: 40px;
-    font-size: 38px;
-    color: #CCA000;
-    text-shadow: 1px 1px #001D3D;
 }
 
 .eventCard_box {
@@ -202,7 +218,12 @@ html {
     background-color: #fff;
     box-shadow: 0 0 30px 5px rgba(0, 29, 61, 0.5);
     cursor: pointer;
+    border: 3px solid black;
+
 }
+
+
+
 
 .eventCard_img_container,
 .eventCard_body_container {
@@ -211,6 +232,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
+
 }
 
 .eventCard_img_container img {
@@ -353,6 +375,7 @@ html {
 
 .event_section {
     position: relative;
+    border-top: 4px solid black;
 
 }
 
@@ -375,12 +398,11 @@ html {
 .contact_and_facebook_box::before {
     content: "";
     position: absolute;
-    bottom: 150px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     height: 500px;
-    background: linear-gradient(90deg,#EBEBEB, #CCA000);
-
+    background: #003566;
     clip-path: polygon(100% 0, -140% 100%, 100% 100%);
 
 
@@ -388,10 +410,10 @@ html {
 
 /*-------------------------------------------------------------------------------------*/
 
-.oxford_blue {
-    background: linear-gradient(90deg, #001D3D, #EBEBEB);
+/* .oxford_blue {
+    background: linear-gradient(90deg, #002446, #EBEBEB);
 
-}
+} */
 
 .yale_blue {
     background-color: #003566;
@@ -428,7 +450,7 @@ html {
     height: 600px;
     left: 0;
     background-color: #b6b6b6;
-    
+
 }
 
 .eventModal img {
@@ -443,27 +465,29 @@ html {
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-    margin: 0px 0 100px 0;
+    margin: 0px 0 0px 0;
 
 
 }
 
 
 .contact_form_box_container {
-    background-color: none;
-    backdrop-filter: blur(50px);
+    background-color: #EBEBEB;
     padding: 20px;
 
 }
 
+
 .google_maps_box,
 .facebook_box {
-    width: 460px;
+    width: 466px;
 }
 
 .google_maps,
 .contact_form_box_container,
 .facebook_feed {
+    border: 3px solid black;
+    border-bottom: none;
     box-shadow: 0 0 30px 5px rgba(0, 29, 61, 0.5);
 }
 
@@ -476,7 +500,7 @@ html {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 200px 0 150px 0;
+        margin: 0px 0 150px 0;
         /*  height: 500px;
          */
 
@@ -499,37 +523,22 @@ html {
 @media only screen and (min-width: 895px) {
 
     /*--------------------HERO PAGE-----------------*/
-    .hero_page_container {
+    /*  .hero_page_container {
         height: 100vh;
 
     }
-
-    .home_page_links_container {
-        display: none;
-    }
-
+ */
     .main_category_class {
-        height: 90vh;
+        height: 60vh;
+
     }
 
     .main_category_videos {
-        height: 90vh;
+        height: 35vh;
         display: flex;
         justify-content: center;
-        border-top: 6px solid #0000;
-        border-bottom: 6px solid #0000;
-        border-left: 3px solid #0000;
-        border-right: 3px solid #0000;
-        width: 100%;
+        width: 500px;
 
-    }
-
-    .main_category_videos:nth-child(1) {
-        border-left: 6px solid #0000;
-    }
-
-    .main_category_videos:nth-child(3) {
-        border-right: 6px solid #0000;
     }
 
 
@@ -581,7 +590,7 @@ html {
         /* margin: 0; */
     }
 
-   
+
 }
 
 
@@ -634,7 +643,7 @@ html {
 
 
     .contact_form_box_container {
-        
+
         border-radius: 0;
         padding: 20px;
         /* width: 75vw; */
@@ -825,6 +834,13 @@ html {
 
     }
 
+    .google_maps,
+    .contact_form_box_container,
+    .facebook_feed {
+        border: none;
+        box-shadow: 0 0 30px 5px rgba(0, 29, 61, 0.5);
+    }
+
 
     /*----------------------------------------------------------*/
 
@@ -872,13 +888,13 @@ html {
         transform: scaleX(1);
     }
 
-    
 
-    
+
+
 }
 
 @media only screen and (max-width: 400px) {
-    
+
     .footer p,
     .footer a {
         font-size: 1em;
