@@ -34,7 +34,7 @@ html {
 }
 
 .welcome_section {
-    height: 35vh;
+    height: 30vh;
     background-image: url("../images/hero_background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +74,7 @@ html {
 }
 
 .main_category_videos {
-    height: 40vh;
+    height: 400px;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -529,15 +529,15 @@ html {
     }
  */
     .main_category_class {
-        height: 70vh;
+        height: 60vh;
 
     }
 
     .main_category_videos {
-        height: 35vh;
+        height: 30vh;
         display: flex;
         justify-content: center;
-        width: 500px;
+        width: 25vw;
 
     }
 
