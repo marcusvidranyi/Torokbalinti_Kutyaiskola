@@ -129,7 +129,7 @@
         .menu {
             width: 100%;
             margin: 0;
-            height: 10vh;
+            height: 7vh;
             background-color: #CCA000;
             position: relative;
             z-index: 2;
@@ -141,7 +141,7 @@
 
         .logo_and_hamburger {
             width: auto;
-            max-height: 10vh;
+            max-height: 7vh;
             background-color: #CCA000;
             display: flex;
             padding: 1em;
