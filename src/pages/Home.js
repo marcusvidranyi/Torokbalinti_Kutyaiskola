@@ -48,7 +48,6 @@ function Home() {
 
     useEffect(() => {
         const params = new URLSearchParams(location.search);
-        console.log(params)
         const shouldScroll = params.get('scroll') === 'true';
     
         if (shouldScroll && elerhetosegSection.current) {
