@@ -32,7 +32,7 @@ function Galeria() {
     return (
         <>
             <NavBar />
-            <div className={openModal ? "products_container_ifModalIsOpen" : "products_container"} id="products">
+            <div className="galeria_container">
                 <div className="product_categry_container">
                     <div className="products" data-aos="fade-up">
                         {cards}
