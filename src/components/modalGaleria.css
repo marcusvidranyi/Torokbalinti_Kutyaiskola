@@ -101,7 +101,6 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
 }
 
 .image {
-    border-radius: 10px;
     border: 3px solid #A8894A;
 }
 
@@ -112,7 +111,6 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     width: 60%;
     height: 75vh;
     border: 3px solid #A8894A;
-    border-radius: 15px;
    /*  background-image: url("../../images/gold3.jpg"); */
     background-position: bottom;
     box-shadow: 0px 32px 15px 19px rgba(0, 0, 0, 0.9);
@@ -131,8 +129,6 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
     display: flex;
     align-items: center;
     color: #A8894A;
-    border: 3px solid #A8894A;
-    border-radius: 15px;
     padding: 1%;
     /* margin-top: 4%; */
 }
