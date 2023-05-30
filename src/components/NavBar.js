@@ -40,7 +40,7 @@ const NavBar = forwardRef((props, ref) => {
                         <div className={burgerClass}></div>
                     </div>
                 </div>
-                <div className={window.innerWidth > 900 ? "menu visible" : menuClass}>
+                <div id="mobile_menu" className={window.innerWidth > 900 ? "menu visible" : menuClass} >
                     <div className="burger_links">
                         <Link to="/">HOME</Link>
                         <Link to="/kikepzok">KIKÉPZŐK</Link>
