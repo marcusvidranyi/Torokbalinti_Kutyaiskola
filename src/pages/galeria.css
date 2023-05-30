@@ -3,8 +3,16 @@
 .galeria_container {
     height: 93vh;
     background-image: linear-gradient(135deg, transparent 0%, transparent 2%,rgb(204,160,0) 2%, rgb(204,160,0) 21%,transparent 21%, transparent 85%,rgb(0,53,102) 85%, rgb(0,53,102) 100%),linear-gradient(45deg, transparent 0%, transparent 18%,rgb(245,204,0) 18%, rgb(245,204,0) 31%,rgb(0,53,102) 31%, rgb(0,53,102) 44%,transparent 44%, transparent 93%,rgb(204,160,0) 93%, rgb(204,160,0) 100%),linear-gradient(90deg, rgb(235,235,235),rgb(235,235,235));
+    margin: 0;
+    padding: 0;
     
     
+}
+
+.galeria_container h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 70px;
 }
 
 .products {
@@ -14,28 +22,47 @@
     align-items: center;
     padding: 20px;
     margin-top: 75px;
+    z-index: 0;
     
 
 
 }
 
 .productcard {
-    width: 340px;
-    height: 270px;
-    color: black;
-    margin: 10px 10px 10px 10px;
-    overflow: hidden;
-    background-position: 5%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 5rem 0 0 10rem;
-    transition: all .3s linear;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    background-position: center;
+    width: 300px;
+    position: relative;
+    border: 4px solid black;
+    margin-left: 100px;
+    color: #ffff;
+    font-size: 25px;
+    font-weight: bolder;
+    
+
+
+}
+
+.productcard::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 150ms ease-in-out;
     cursor: pointer;
-    border: 3px solid black;
-    background-color: #EBEBEB;
+    transform: translate(-50px, 50px);
+    border: 20px solid #001D3D;
+    
+}
 
-
-
+.productcard:hover::before {
+    transform: translate(0);
 }
 
 
@@ -49,7 +76,6 @@
 .card_content {
     /* padding: 40px 0 0 20px; */
     /* height: 100%; */
-    font-size: 20px;
     text-align: center;
 
     /* text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
@@ -69,19 +95,22 @@
 }
 
 .product_overlay {
-
+    position: relative;
+    bottom: 75px;
     display: flex;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     height: 100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    
 
 }
 
 .product_modal_container {
     width: 80vw;
     height: 80vh;
+    background-color: #001D3D;
 
 }
 

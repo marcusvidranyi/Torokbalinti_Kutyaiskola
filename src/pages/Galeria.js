@@ -33,6 +33,7 @@ function Galeria() {
         <>
             <NavBar />
             <div className="galeria_container">
+                <h1>GALÉRIA</h1>
                 <div className="product_categry_container">
                     <div className="products" data-aos="fade-up">
                         {cards}
