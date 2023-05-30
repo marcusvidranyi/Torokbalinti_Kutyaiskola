@@ -41,6 +41,47 @@ function Home() {
     }); */
 
 
+
+    function disemvowel(str) {
+         let vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+         let newStr = str.split("");
+         for(let i = 0; i < newStr.length; i++) {
+             for(let j = 0; j < vowel.length; j++){
+                 if(newStr[i] === vowel[j]) {
+                     newStr.splice(i, 1);
+                     i--;
+                     break;
+                 }
+             }
+         }
+         let result = newStr.join("")
+ 
+         return result;
+        /* const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+        let result = '';
+
+        for (let i = 0; i < str.length; i++) {
+            if (!vowels.includes(str[i])) {
+                result += str[i];
+            }
+        }
+
+        return result; */
+    }
+
+
+
+    console.log(disemvowel('This website is for losers LOL!'))
+
+
+
+
+
+
+
+
+
+
     /*-----------Page Navigation----------------------- */
 
     const elerhetosegSection = useRef(null);
@@ -49,11 +90,11 @@ function Home() {
     useEffect(() => {
         const params = new URLSearchParams(location.search);
         const shouldScroll = params.get('scroll') === 'true';
-    
+
         if (shouldScroll && elerhetosegSection.current) {
             elerhetosegSection.current.scrollIntoView({ behavior: 'smooth' });
         }
-      }, [location]);
+    }, [location]);
 
 
 
