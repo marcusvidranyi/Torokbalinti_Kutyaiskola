@@ -62,7 +62,7 @@ function Home() {
             <section className="hero_page_container">
                 <NavBar ref={elerhetosegSection} />
                 <section className="welcome_section">
-                    <h1>WELCOME</h1>
+                    <h1>ÜDVÖZÖLJÜK</h1>
                 </section>
                 <div className="main_category_class">
                     <Link to="/hobbi" className="main_category_videos">

@@ -99,6 +99,8 @@ html {
 
 
 
+
+
 /*-----------MAIN 3 CATEGORY SELECTOR TEXT--------*/
 .category_image_text_hobbi {
     position: absolute;
@@ -193,10 +195,7 @@ html {
 
 .eventCard_box {
     display: grid;
-    gap: 1rem;
-
     grid-template-columns: repeat(5, auto);
-
     justify-content: center;
     gap: 1em;
     margin-bottom: 5em;
@@ -460,7 +459,8 @@ html {
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-    margin: 0px 0 0px 0;
+    margin: 0;
+    padding-bottom: 25px;
 
 
 }
@@ -753,7 +753,7 @@ html {
 
     .eventCard_container {
         position: relative;
-        margin: 24px 10px 24px 10px;
+        margin: 24px 10px 0px 10px;
         width: 12em;
         height: 300px;
         overflow: hidden;
@@ -967,8 +967,8 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
-        gap: 10px;
+        padding: 0 5px 0 5px;
+        gap: 5px;
         overflow: hidden;
         text-align: center;
         position: relative;
@@ -1012,13 +1012,17 @@ html {
 
     .eventCard_container {
         position: relative;
-        margin: 24px 0px 24px 0px;
+        margin: 0px 0px 0px 0px;
         width: 12em;
         height: 300px;
         overflow: hidden;
         background-color: #fff;
         box-shadow: 0 0 30px 5px rgba(0, 29, 61, 0.5);
         cursor: pointer;
+    }
+
+    .eventCard_box {
+        margin-top: 20px;
     }
 
     .footer p,
