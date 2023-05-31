@@ -124,12 +124,10 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
 }
 
 .title_and_close>h3 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
+    font-size: 25px;
     display: flex;
     align-items: center;
-    color: #A8894A;
-    padding: 1%;
+    color: #ffff;
     /* margin-top: 4%; */
 }
 
