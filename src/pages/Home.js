@@ -42,7 +42,6 @@ function Home() {
 
 
 
-
     /*-----------Page Navigation----------------------- */
 
     const elerhetosegSection = useRef(null);
