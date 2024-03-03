@@ -28,20 +28,6 @@ import dog_video_3 from "../videos/dog_video_3.mp4";
 
 function Home() {
 
-    /*-----------CHECK OVERFLOW----------------------- */
-    /* const documentWidth = document.documentElement.offsetWidth;
-
-    document.querySelectorAll('*').forEach(element => {
-        const box = element.getBoundingClientRect();
-
-        if (box.left < 0 || box.right > documentWidth) {
-            console.log(element);
-            element.style.border = '1px solid red';
-        }
-    }); */
-
-
-
     /*-----------Page Navigation----------------------- */
 
     const elerhetosegSection = useRef(null);
@@ -139,7 +125,7 @@ function Home() {
                 <div className="footer">
 
                     <p>webfejlesztő:</p>
-                    <a href="https://marcusvidranyi.com/">marcusvidranyi.com</a>
+                    <p>Vidrányi Marcus</p>
 
                 </div>
             </section>

@@ -8,8 +8,9 @@
 
 .category_box {
     height: auto;
+    max-width: 750px;
     /* margin-top: 60px; */
-    padding: 20px 0px 100px 0px;
+    padding: 20px 0px 50px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -42,12 +43,13 @@
     border-radius: 3px;
     margin-bottom: 50px;
     z-index: 1;
+    padding: 0 15px;
 
 
 }
 
 .subcategory_box {
-    width: 55vw;
+    
     padding: 0 20px 0 20px;
 
 }
@@ -59,6 +61,21 @@
     display: inline-block;
     text-align: center;
 
+}
+
+.subCategory_titles_first_selected h2:first-child {
+    color: #F5CC00 !important;
+}
+
+/* ----------------------------BACK TO MENU LINK----------------------- */
+
+.back-to-menu-link {
+    color: #F5CC00;
+    text-decoration: none;
+}
+
+.back-to-menu-link:hover {
+    color: #ffff;
 }
 
 
@@ -81,96 +98,15 @@
 
 }
 
-
-/*-------------------------------SUBCATEGORY BACKGROUND DECORATION-----------------*/
-
-
-
-@media only screen and (min-width: 1000px) {
-    .animation {
-        position: absolute;
-        height: 6px;
-        top: 100%;
-        background-color: black;
-        width: 100px;
-        z-index: -1;
-        transition: all .5s ease 0s;
-    }
-
-    .subCategory_titles h2:nth-child(1) {
-        width: 150px;
-    }
-
-
-    .start_PULLER,
-    .start_ŐRZŐ-VÉDŐ,
-    .subCategory_titles h2:nth-child(1):hover~.animation {
-        width: 150px;
-        left: 0;
-    }
-
-    .subCategory_titles h2:nth-child(2) {
-        width: 150px;
-    }
-
-
-    .start_AGILITY,
-    .start_ENGEDELMES,
-    .subCategory_titles h2:nth-child(2):hover~.animation {
-        width: 150px;
-        left: 190px;
-    }
-
-    .subCategory_titles h2:nth-child(3) {
-        width: 150px;
-    }
-
-    .start_ŐRZŐ-VÉDŐ,
-    .start_OBEDIENCE,
-    .subCategory_titles h2:nth-child(3):hover~.animation {
-        width: 150px;
-        left: 395px;
-    }
-
-
-    .subCategory_titles h2:nth-child(4) {
-        width: 150px;
-    }
-
-    .start_IGP,
-    .subCategory_titles h2:nth-child(4):hover~.animation {
-        width: 150px;
-        left: 600px;
-    }
-
-    .subCategory_titles h2:nth-child(5) {
-        width: 150px;
-    }
-
-    .start_MANTRAILING,
-    .subCategory_titles h2:nth-child(5):hover~.animation {
-        width: 150px;
-        left: 800px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .subCategory_titles {
-        margin-left: 50px;
-    }
-}
-
-
 @media only screen and (max-width: 700px) {
+    .back-to-menu-link {
+        margin-bottom: 20px;
+    }
 
     .category_box {
         width: 85vw;
-        /* background-color: rgba(0, 53, 102, 0.7); */
         padding: 0;
         margin: 0;
-
-
-
     }
 
     .category_box img {
@@ -184,39 +120,17 @@
     }
 
     .subCategory_titles {
-        display: grid;
-        grid-template-columns: repeat(6, auto);
-        row-gap: 35px;
-        margin-left: 0;
-        margin-bottom: 100px;
-
-
+        align-items: center;
+        column-gap: 25px;
+        row-gap: 0px;
+        flex-wrap: wrap;
     }
-
-    .subCategory_titles h2 {
-        grid-column: span 2;
-        font-size: 14px;
-    }
-
-
-    .subCategory_titles h2:nth-last-child(3) {
-        grid-column-end: -4;
-
-    }
-
-    .subCategory_titles h2:nth-last-child(2) {
-        grid-column-end: -2;
-    }
-
 }
 
 @media only screen and (max-width: 420px) {
-
     .subCategory_titles {
-        display: grid;
-        grid-template-columns: repeat(6, auto);
-        row-gap: 0px;
-        column-gap: 15px;
+        display: flex;
+        gap: 20px;
         margin-left: 0;
         margin-bottom: 60px;
 
@@ -224,7 +138,7 @@
     }
 
     .subCategory_titles h2 {
-        grid-column: span 2;
         font-size: 12px;
+        line-height: 13px;
     }
 }

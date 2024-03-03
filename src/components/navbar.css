@@ -64,7 +64,7 @@
 }
 
 .burger_links a {
-    color: #001D3D;
+    color: #CCA000;
     text-decoration: none;
     font-size: 1.3em;
     margin-top: 25px;
@@ -164,6 +164,7 @@
     }
 
     .burger_links a {
+        color: #001D3D;
         margin: 0 0px 0 2vw;
 
     }
