@@ -5,8 +5,9 @@
 
 
 .contact_form_box h2 {
-    color: #CCA000;
+    color: black;
     margin: 2em 0 0 0;
+    
 }
 
 .contact_form .row50 {
@@ -40,7 +41,7 @@
 .inputBox span {
     margin: 10px 0 5px 0;
     font-weight: 500;
-    color: #CCA000;
+    color: black;
 }
 
 .inputBox input {
@@ -61,8 +62,8 @@
 }
 
 .contact_form_submitbutton {
-    background-color: #F5CC00;
-    color: #FFFF;
+    background-color: #CCA000;
+    color: white;
     width: 150px;
     height: 40px;
     cursor: pointer;
@@ -74,4 +75,10 @@
     border: 1px solid #FFFF;
     box-shadow: 0 0 5px 5px #A8894A !important;
     transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 500px) {
+    .inputBox input {
+        width: 35vw;
+    }
 }

@@ -21,21 +21,23 @@ const CategoryPage = ({ categoryData, categoryName }) => {
     return (
         <div>
             <NavBar />
-            <div className="category_box oxford_blue">
-                <h1>{categoryName}</h1>
-                <div className="subCategory_titles">
-                    {
-                        categoryData[categoryName].map((data, index) => {
-                            return <h2 onClick={clickHandler(index)} key={index}>{data[0]}</h2>
-                        })
-                    }
-                    <div className={`animation start_${subCategoryName}`}></div>
-                </div>
-                <div className="subCategory_image_box">
-                    <img src={Object.values(subCategoryPicture)} />
-                </div>
-                <div className="subcategory_box">
-                    {subCategoryDescription}
+            <div className="category_box_container">
+                <div className="category_box">
+                    <h1>{categoryName}</h1>
+                    <div className="subCategory_titles">
+                        {
+                            categoryData[categoryName].map((data, index) => {
+                                return <h2 onClick={clickHandler(index)} key={index}>{data[0]}</h2>
+                            })
+                        }
+                        <div className={`animation start_${subCategoryName}`}></div>
+                    </div>
+                    <div className="subCategory_image_box">
+                        <img src={Object.values(subCategoryPicture)} />
+                    </div>
+                    <div className="subcategory_box">
+                        {subCategoryDescription}
+                    </div>
                 </div>
             </div>
         </div>

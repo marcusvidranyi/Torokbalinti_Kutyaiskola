@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import tbk_logo10 from "../images/tbk_logo10.png"
 
-const NavBar = () => {
+const NavBar = forwardRef((props, ref) => {
+
 
 
     // to change burger classes
@@ -27,7 +28,6 @@ const NavBar = () => {
     }
 
 
-
     return (
         <>
             <div className="navbar_container">
@@ -40,12 +40,12 @@ const NavBar = () => {
                         <div className={burgerClass}></div>
                     </div>
                 </div>
-                <div className={window.innerWidth > 900 ? "menu visible" : menuClass}>
+                <div id="mobile_menu" className={window.innerWidth > 900 ? "menu visible" : menuClass} >
                     <div className="burger_links">
                         <Link to="/">HOME</Link>
                         <Link to="/kikepzok">KIKÉPZŐK</Link>
                         <Link to="/galeria">GALÉRIA</Link>
-                        <Link to="/elerhetoseg">ELÉRHETŐSÉG</Link>
+                        <Link to="/?scroll=true">ELÉRHETŐSÉG</Link>
                         <Link to="/panzio">PANZIÓ</Link>
                         <Link to="/hirek">HíREK</Link>
                         <Link to="/partnerek">PARTNEREK</Link>
@@ -56,6 +56,6 @@ const NavBar = () => {
             </div>
         </>
     )
-}
+});
 
 export default NavBar
