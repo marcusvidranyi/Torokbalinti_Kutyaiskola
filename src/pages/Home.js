@@ -99,11 +99,6 @@ function Home() {
                     }
                 </div>
 
-
-                <div className="contact_form_box_container">
-                    <InfoBox />
-                    <ContactForm />
-                </div>
                 <div className="facebook_box">
                     {window.innerWidth > 645 ?
                         <div className="facebook_feed" dangerouslySetInnerHTML={{
@@ -114,6 +109,11 @@ function Home() {
                             __html: `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorokbalintiKutyaiskola&tabs=timeline&width=${Math.round((window.innerWidth / 100) * 75)}px&height=850px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height=464.2px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`
                         }} />
                     }
+                </div>
+
+                <div className="contact_form_box_container">
+                    <InfoBox />
+                    <ContactForm />
                 </div>
 
             </section>

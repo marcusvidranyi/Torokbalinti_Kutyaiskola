@@ -728,6 +728,11 @@ html {
 
     /*--------------------Event Card---------------------------------*/
 
+    .eventCard_box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .event_section {
         display: flex;
         justify-content: center;
@@ -735,9 +740,6 @@ html {
         align-items: center;
         text-align: center;
         margin: 0;
-
-
-
     }
 
     .event_section h2 {
@@ -890,7 +892,6 @@ html {
     .google_maps_box {
         width: 75vw;
         margin-bottom: 50px;
-        ;
     }
 
 
@@ -899,8 +900,14 @@ html {
         width: 100%;
     }
 
-    .facebook_box {
+    .facebook_box, 
+    .facebook_feed {
         width: 75vw;
+        height: 700px;
+
+        iframe {
+            height: 100%;
+        }
 
     }
 

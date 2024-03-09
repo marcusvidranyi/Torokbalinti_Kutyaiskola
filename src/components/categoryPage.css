@@ -8,7 +8,7 @@
 
 .category_box {
     height: auto;
-    max-width: 750px;
+    max-width: 1000px;
     /* margin-top: 60px; */
     padding: 20px 0px 50px 0px;
     display: flex;
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     position: relative;
     width: auto;
     height: 50px;
@@ -125,12 +125,19 @@
         row-gap: 0px;
         flex-wrap: wrap;
     }
+
+    .subCategory_titles h2 {
+        font-size: 12px;
+        line-height: 13px;
+    }
 }
 
 @media only screen and (max-width: 420px) {
     .subCategory_titles {
         display: flex;
         gap: 20px;
+        padding: 0 5px;
+        row-gap: 0;
         margin-left: 0;
         margin-bottom: 60px;
 

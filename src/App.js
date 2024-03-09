@@ -5,7 +5,6 @@ import Kikepzok from './pages/Kikepzok';
 import Galeria from './pages/Galeria';
 import Aszf from './pages/Aszf';
 import Panzio from './pages/Panzio';
-import Hirek from './pages/Hirek';
 import Partnerek from './pages/Partnerek';
 import Szolgalati from './pages/Szolgalati';
 import Sport from "./pages/Sport";
@@ -24,7 +23,6 @@ function App() {
         {/* <Route path="/elerhetoseg" element={<Elerhetoseg />} /> */}
         <Route path="/aszf" element={<Aszf />} />
         <Route path="/panzio" element={<Panzio />} />
-        <Route path="/hirek" element={<Hirek />} />
         <Route path="/partnerek" element={<Partnerek />} />
         <Route path="/hobbi" element={<Hobbi />} />
         <Route path="/sport" element={<Sport />} />

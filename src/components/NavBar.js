@@ -47,7 +47,7 @@ const NavBar = forwardRef((props, ref) => {
                         <Link to="/galeria">GALÉRIA</Link>
                         <Link to="/?scroll=true">ELÉRHETŐSÉG</Link>
                         <Link to="/panzio">PANZIÓ</Link>
-                        <Link to="/hirek">HíREK</Link>
+                        <Link to="/?scroll=true">HíREK</Link>
                         <Link to="/partnerek">PARTNEREK</Link>
                         <Link to="/aszf">ÁSZF</Link>
                     </div>
