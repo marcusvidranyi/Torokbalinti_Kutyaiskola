@@ -120,7 +120,7 @@
 @media only screen and (max-width: 608px) {
     .balazs_box,
     .niki_box {
-        width: 85vw;
+        width: 96vw;
         color: #FFFF;
         border: 3px solid black;
         padding: 10px;
@@ -153,6 +153,12 @@
         font-size: 18px;
         margin: 0;
         padding: 10px;
+    }
+
+    .balazs_box h2,
+    .niki_box h2 {
+        padding: 10px;
+        margin: 0;
     }
 
     .balazs_dogs,
