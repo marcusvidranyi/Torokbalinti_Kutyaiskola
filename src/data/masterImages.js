@@ -1,13 +1,13 @@
-import kutyaIskola from "./kutyaIskola";
-import szolgalati from "./szolgalati";
-import orzoVedo from "./orzoVedo";
-import nyomkovetes from "./nyomkovetes";
-import napkozi from "./napkozi";
-import kolyokSzocializacio from "./kolyokSzocializacio";
-import engedelmes from "./engedelmes";
-import egyeniTrening from "./egyeniTrening";
-import bemutatok from "./bemutatok";
-import ludovika from "./ludovika";
+import kutyaIskola from "./categoryImages/kutyaIskola";
+import szolgalati from "./categoryImages/szolgalati";
+import orzoVedo from "./categoryImages/orzoVedo";
+import nyomkovetes from "./categoryImages/nyomkovetes";
+import napkozi from "./categoryImages/napkozi";
+import kolyokSzocializacio from "./categoryImages/kolyokSzocializacio";
+import engedelmes from "./categoryImages/engedelmes";
+import egyeniTrening from "./categoryImages/egyeniTrening";
+import bemutatok from "./categoryImages/bemutatok";
+import ludovika from "./categoryImages/ludovika";
 
 const masterImages = [
     kutyaIskola,

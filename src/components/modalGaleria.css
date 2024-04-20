@@ -270,7 +270,7 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
         justify-content: center;
     }
 
-    .gallery_modal_close_top_mobile {
+    .gallery_modal_close_top_right {
         position: absolute;
         right: 0;
         margin-right: 15px;
