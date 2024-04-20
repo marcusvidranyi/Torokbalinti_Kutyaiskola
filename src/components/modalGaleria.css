@@ -267,8 +267,13 @@ bug with positioning of text, removing .gallery_item > position relative fixes i
 
     .title_and_close {
         margin: 5% 0 5% 0;
+        justify-content: center;
     }
 
-    
+    .gallery_modal_close_top_mobile {
+        position: absolute;
+        right: 0;
+        margin-right: 15px;
+    }
     
 }

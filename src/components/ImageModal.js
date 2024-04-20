@@ -34,7 +34,7 @@ function ImageModal({ title, open, onClose, /* image, */ propsKey }) {
             <FontAwesomeIcon icon={faCircleXmark} className="btnClose" />
           </div>
           <h3>{title}</h3>
-          <div className="gallery_modal_close">
+          <div className="gallery_modal_close gallery_modal_close_top_mobile">
             <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={onClose} />
           </div>
         </div>

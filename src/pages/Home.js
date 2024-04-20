@@ -49,7 +49,16 @@ function Home() {
             <section className="hero_page_container">
                 <NavBar ref={elerhetosegSection} />
                 <section className="welcome_section">
-                    <h1>ÜDVÖZÖLJÜK</h1>
+                    <h1 className="welcome_section_welcome">ÜDVÖZÖLJÜK</h1>
+                    <h3 className="welcome_section_text">Én és Balázs Szabó (férjem) Immáron 24 éve kutyázunk és Nincs vége 🙃🐶<br></br>
+                        Folyamatos fejlődés
+                        továbbképzések, tréningek, vizsgák,versenyek ....<br></br>
+                        Természetesen igyekszünk mindent és mindent tovább adni a hozzánk járó Gazda & Kutya párosoknak!! 🐕<br></br>
+                        Együttműködve:
+                        tudásukban is elismert szakemberekkel
+                        Péter Poszpischil , Nagy Balázs, András Bánszki és Vidrányi Dorottya ...
+                        Várunk minden tanulni vágyót szeretettel 🙃
+                    </h3>
                 </section>
                 <div className="main_category_class">
                     <Link to="/hobbi" className="main_category_videos">
@@ -82,9 +91,8 @@ function Home() {
                         return <EventCard {...event} key={index} itemIndex={index} />
                     })}
                 </div>
-
-
             </section>
+
             <section className="contact_and_facebook_box" ref={elerhetosegSection}>
 
                 <div className="google_maps_box">
