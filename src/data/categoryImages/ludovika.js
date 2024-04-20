@@ -19,6 +19,10 @@ const ludovika = [
         id: 5,
         dog_img: require('../../images/ludovika/IMG_20240403_151759.jpg')
     },
+    {
+        id: 6,
+        dog_img: require('../../images/ludovika/csoportkep.jpg')
+    },
 ];
 
 export default ludovika;
