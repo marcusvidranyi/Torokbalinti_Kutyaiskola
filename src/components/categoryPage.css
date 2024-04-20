@@ -133,6 +133,11 @@
 }
 
 @media only screen and (max-width: 420px) {
+
+    .category_box {
+        width: 93vw;
+    }
+
     .subCategory_titles {
         display: flex;
         gap: 20px;

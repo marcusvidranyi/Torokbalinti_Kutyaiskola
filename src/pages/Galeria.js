@@ -13,6 +13,9 @@ function Galeria() {
 
     const clickHandler = (key) => (event) => {
         event.preventDefault();
+        /* Go to top of page when modal is opened: */
+        window.scrollTo(0, 0);
+        /* ----------- */
         setModalKey(key - 1);
         setOpenModal(true);
     }
