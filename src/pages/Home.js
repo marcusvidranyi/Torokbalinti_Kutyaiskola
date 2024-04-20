@@ -52,7 +52,7 @@ function Home() {
                     <h1 className="welcome_section_welcome">ÜDVÖZÖLJÜK</h1>
                     <h3 className="welcome_section_text">Én és Balázs Szabó (férjem) Immáron 24 éve kutyázunk és Nincs vége 🙃🐶<br></br>
                         Folyamatos fejlődés
-                        továbbképzések, tréningek, vizsgák,versenyek ....<br></br>
+                        továbbképzések, tréningek, vizsgák, versenyek ....<br></br>
                         Természetesen igyekszünk mindent és mindent tovább adni a hozzánk járó Gazda & Kutya párosoknak!! 🐕<br></br>
                         Együttműködve:
                         tudásukban is elismert szakemberekkel

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import galeriaImages from "../data/galeriaImages";
+import masterImages from "../data/masterImages";
 import ModalGaleria from "./ModalGaleria";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +7,8 @@ import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import "./modalGaleria.css";
 
 function ImageModal({ title, open, onClose, /* image, */ propsKey }) {
+
+  console.log("marcus", masterImages)
 
   const refCloseModal = useRef(null);
 
@@ -34,11 +36,11 @@ function ImageModal({ title, open, onClose, /* image, */ propsKey }) {
             <FontAwesomeIcon icon={faCircleXmark} className="btnClose" />
           </div>
           <h3>{title}</h3>
-          <div className="gallery_modal_close gallery_modal_close_top_mobile">
+          <div className="gallery_modal_close">
             <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={onClose} />
           </div>
         </div>
-        <ModalGaleria galeriaImages={galeriaImages[propsKey]} onClose={onClose} />
+        <ModalGaleria galeriaImages={masterImages[propsKey]} onClose={onClose} />
         <div className="gallery_modal_close">
           <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={onClose} />
         </div>

@@ -160,7 +160,7 @@ function ModalGaleria({ galeriaImages, onClose }) {
                                             width="100%"
                                             height="100%"
                                             className="actual_images"
-                                            alt="dog image"
+                                            alt="cake image"
                                             /* placeholderSrc={placeholderedesm} */
                                         />
                                     </div>
