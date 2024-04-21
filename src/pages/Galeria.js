@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar";
+import { Link } from "react-router-dom";
 import galeriaData from "../data/galeriaData";
 import GaleriaCard from "../components/GaleriaCard";
 import ImageModal from "../components/ImageModal";
@@ -50,6 +51,7 @@ function Galeria() {
                         />
                     </div>
                 </div>
+            <Link to="/" className="back-to-menu-link-galeria">VISSZA A FŐOLDALRA</Link>
             </div>
 
         </>

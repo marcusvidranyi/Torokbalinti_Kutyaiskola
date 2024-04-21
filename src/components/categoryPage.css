@@ -72,6 +72,8 @@
 .back-to-menu-link {
     color: #F5CC00;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 .back-to-menu-link:hover {

@@ -1,10 +1,7 @@
 import "./kikepzok.css"
+import { Link } from "react-router-dom";
 
 import NavBar from "../components/NavBar";
-import dog_category_example_1 from "../images/dog_category_example_1.jpg";
-import dog_category_example_2 from "../images/dog_category_example_2.jpg";
-import dog_category_example_3 from "../images/dog_category_example_3.jpg";
-import dog_screenshot_3 from "../images/dog_screenshot_3.jpg";
 import niki_profile_picture from "../images/niki_profile_picture.jpg";
 import balazs_profil from "../images/balazs_profil.jpg";
 
@@ -178,6 +175,7 @@ const Kikepzok = () => {
                         <img src={dog_screenshot_3} />
                         <img src={dog_screenshot_3} />
                     </div> */}
+                    <Link to="/" className="back-to-menu-link">VISSZA A FŐOLDALRA</Link>
                 </div>
 
             </div>
