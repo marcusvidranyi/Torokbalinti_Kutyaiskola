@@ -14,6 +14,14 @@ const kolyok_szoc = [
     {
         id: 4,
         dog_img: require('../../images/kolyok_szoc/IMG_20240405_093451_1.jpg')
+    },
+    {
+        id: 5,
+        dog_img: require('../../images/kolyok_szoc/IMG_20230916_120033_1.jpg')
+    },
+    {
+        id: 6,
+        dog_img: require('../../images/kolyok_szoc/IMG_20230916_120347_1.jpg')
     }
 ];
 

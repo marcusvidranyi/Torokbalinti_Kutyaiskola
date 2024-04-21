@@ -37,16 +37,15 @@
     display: flex;
     justify-content: center;
     background-color: black;
+    background-size: cover;
     background-position: center;
     width: 250px;
     position: relative;
-    border: 4px solid black;
+    border: 4px solid #003566;
     color: #EBEBEB;
     font-size: 25px;
     font-weight: bolder;
     cursor: pointer;
-
-
 }
 
 .productcard::before {
