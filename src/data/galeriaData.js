@@ -18,7 +18,7 @@ export default [
     {
         id: 4,
         title: "Nyomkövetés",
-        coverImg: require("../images/nyomkovetes/IMG_20240401_111454.jpg"),
+        coverImg: require("../images/nyomkovetes/IMG_20240421_164913.jpg"),
     },
     {
         id: 5,
@@ -50,4 +50,9 @@ export default [
         title: "Ludovika",
         coverImg: require("../images/FB_IMG_1712122806981_2.jpg"),
     },
+    {
+        id: 11,
+        title: "Ügyességi",
+        coverImg: require("../images/ugyessegi/IMG_20240421_114709.jpg"),
+    }
 ];

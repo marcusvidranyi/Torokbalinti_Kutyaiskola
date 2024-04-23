@@ -35,6 +35,22 @@ const engedelmes = [
         id: 9,
         dog_img: require('../../images/engedelmes/IMG_20240331_173638.jpg')
     },
+    {
+        id: 10,
+        dog_img: require('../../images/engedelmes/IMG_20240420_164736_1.jpg')
+    },
+    {
+        id: 11,
+        dog_img: require('../../images/engedelmes/IMG_20240421_114908.jpg')
+    },
+    {
+        id: 12,
+        dog_img: require('../../images/engedelmes/IMG_20240421_114928.jpg')
+    },
+    {
+        id: 13,
+        dog_img: require('../../images/engedelmes/IMG_20240421_115044.jpg')
+    },
 ];
 
 export default engedelmes;

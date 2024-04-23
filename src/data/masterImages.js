@@ -8,6 +8,7 @@ import engedelmes from "./categoryImages/engedelmes";
 import egyeniTrening from "./categoryImages/egyeniTrening";
 import bemutatok from "./categoryImages/bemutatok";
 import ludovika from "./categoryImages/ludovika";
+import ugyessegi from "./categoryImages/ugyessegi";
 
 const masterImages = [
     kutyaIskola,
@@ -19,7 +20,8 @@ const masterImages = [
     engedelmes,
     egyeniTrening,
     bemutatok,
-    ludovika
+    ludovika,
+    ugyessegi
 ]
 
 export default masterImages;
