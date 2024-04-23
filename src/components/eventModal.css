@@ -1,0 +1,23 @@
+.eventModal {
+    position: fixed;
+    background-color: #ffff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.eventModal_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventModal img {
+    height: 250px;
+}

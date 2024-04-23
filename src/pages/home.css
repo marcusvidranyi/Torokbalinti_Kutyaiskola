@@ -436,26 +436,6 @@ html {
 
 
 
-/*Event Modal*/
-
-.eventModal {
-    position: fixed;
-    top: 25%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    width: 100%;
-    height: 600px;
-    left: 0;
-    background-color: #b6b6b6;
-
-}
-
-.eventModal img {
-    height: 250px;
-}
-
 /*-----------------------------------Facebook, Contact and Google Maps box------------------------------*/
 
 .contact_and_facebook_box {
