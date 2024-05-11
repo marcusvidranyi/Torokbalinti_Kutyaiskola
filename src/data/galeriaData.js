@@ -13,7 +13,7 @@ export default [
     {
         id: 3,
         title: "Őrző-Védő",
-        coverImg: require("../images/orzoVedo/IMG_20230909_121435.jpg"),
+        coverImg: require("../images/orzoVedo/received_300433009263270.jpg"),
     },
     {
         id: 4,
@@ -28,7 +28,7 @@ export default [
     {
         id: 6,
         title: "Kölyök Szocializáció",
-        coverImg: require("../images/kolyok_szoc/IMG_20230916_120347_1.jpg"),
+        coverImg: require("../images/kolyok_szoc/IMG_20240404_144830_1.jpg"),
     },
     {
         id: 7,

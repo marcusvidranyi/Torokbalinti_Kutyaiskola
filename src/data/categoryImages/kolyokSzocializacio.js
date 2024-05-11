@@ -19,10 +19,6 @@ const kolyok_szoc = [
         id: 5,
         dog_img: require('../../images/kolyok_szoc/IMG_20230916_120033_1.jpg')
     },
-    {
-        id: 6,
-        dog_img: require('../../images/kolyok_szoc/IMG_20230916_120347_1.jpg')
-    }
 ];
 
 export default kolyok_szoc;
